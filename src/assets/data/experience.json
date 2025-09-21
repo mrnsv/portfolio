@@ -1,0 +1,154 @@
+{
+  "experiences": [
+    {
+      "id": "alokin-senior-qa",
+      "company": "Alokin Software Pvt. Ltd.",
+      "position": "Senior Quality Analyst Engineer",
+      "startDate": "Nov 2021",
+      "endDate": "Feb 2025",
+      "current": false,
+      "description": "Led testing efforts for high-impact projects, ensuring quality standards and timely delivery. Implemented automated testing strategies and conducted performance testing using JMeter.",
+      "technologies": ["Selenium", "Pytest", "JMeter", "Postman", "TestRail", "GitLab CI"],
+      "achievements": [
+        "Implemented automated testing strategies, resulting in a 30% reduction in testing time",
+        "Conducted performance testing using JMeter, identifying bottlenecks and optimizing system performance",
+        "Led testing efforts for high-impact projects, ensuring quality standards and timely delivery",
+        "Conducted training sessions for junior QA team members",
+        "Recognized for strong cross-functional collaboration and mentoring capabilities"
+      ],
+      "location": "Trivandrum, Kerala",
+      "type": "Full-time"
+    },
+    {
+      "id": "distinct-qa-engineer",
+      "company": "Distinct Infotech Solutions",
+      "position": "Quality Analyst Engineer",
+      "startDate": "Jan 2020",
+      "endDate": "Oct 2021",
+      "current": false,
+      "description": "Spearheaded the development and implementation of comprehensive test plans for major software releases. Executed end-to-end testing for critical modules and played a key role in successful implementations.",
+      "technologies": ["Manual Testing", "Automation Testing", "API Testing", "Postman", "Selenium", "TestRail"],
+      "achievements": [
+        "Spearheaded comprehensive test plans for major software releases",
+        "Executed end-to-end testing for critical modules",
+        "Played a key role in successful implementation of CASMEX and iShield",
+        "Conducted thorough regression testing, resulting in a 20% reduction in post-release defects",
+        "Demonstrated potential for advancement to team lead position"
+      ],
+      "location": "Trivandrum, Kerala",
+      "type": "Full-time"
+    },
+    {
+      "id": "distinct-customer-support",
+      "company": "Distinct Infotech Solutions",
+      "position": "Customer Support Manager",
+      "startDate": "Dec 2017",
+      "endDate": "Jan 2020",
+      "current": false,
+      "description": "Oversaw a team of customer support representatives, ensuring timely and effective resolution of customer issues. Implemented new protocols and procedures while collaborating with product development teams.",
+      "technologies": ["Customer Support", "Team Management", "Process Improvement", "Training"],
+      "achievements": [
+        "Implemented new customer support protocols, resulting in a 25% increase in customer satisfaction",
+        "Developed and conducted training sessions for new support team members",
+        "Collaborated with product development team to relay customer feedback",
+        "Played a pivotal role in successful implementation of CASMEX and iShield systems",
+        "Demonstrated strong teamwork skills and leadership potential"
+      ],
+      "location": "Trivandrum, Kerala",
+      "type": "Full-time"
+    }
+  ],
+  "education": [
+    {
+      "id": "stc-certification",
+      "institution": "STC Technologies",
+      "degree": "Certified Software Test Professional Associate Level",
+      "startDate": "Jan 2019",
+      "endDate": "Jun 2019",
+      "current": false,
+      "description": "Comprehensive certification program covering software testing methodologies, tools, and best practices.",
+      "achievements": [
+        "Certified Software Test Professional Associate Level",
+        "Comprehensive understanding of testing methodologies"
+      ],
+      "location": "Trivandrum, Kerala",
+      "gpa": null
+    },
+    {
+      "id": "mbcet-btech",
+      "institution": "MBCET",
+      "degree": "Bachelor of Technology",
+      "startDate": "Jun 2012",
+      "endDate": "Jul 2016",
+      "current": false,
+      "description": "Bachelor's degree in Electrical and Electronics Engineering with focus on technical problem-solving and analytical skills.",
+      "achievements": [
+        "Bachelor of Technology in Electrical and Electronics Engineering",
+        "Strong foundation in technical problem-solving"
+      ],
+      "location": "Trivandrum, Kerala",
+      "gpa": null
+    }
+  ],
+  "certifications": [
+    {
+      "id": "istqb-foundation",
+      "name": "ISTQB® Certified Tester Foundation Level",
+      "issuer": "ISTQB",
+      "certificateId": "00500580",
+      "date": "2020",
+      "description": "Foundation level certification in software testing covering fundamental testing concepts and practices."
+    },
+    {
+      "id": "safe-practitioner-5",
+      "name": "Certified SAFe® Practitioner – Version 5",
+      "issuer": "Scaled Agile Inc",
+      "certificateId": "61215157-7527",
+      "date": "2021",
+      "description": "Certification in Scaled Agile Framework for enterprise-level agile development."
+    },
+    {
+      "id": "safe-practitioner-6",
+      "name": "Certified SAFe® Practitioner – Version 6",
+      "issuer": "Scaled Agile Inc",
+      "certificateId": "01918543-0804",
+      "date": "2022",
+      "description": "Updated certification in Scaled Agile Framework Version 6."
+    }
+  ],
+  "skills": {
+    "testing": [
+      "Manual Testing", "Automation Testing", "API Testing", "UI Testing", "Performance Testing", 
+      "Requirement Analysis", "Defect Management", "Regression Testing", "End-to-End Testing"
+    ],
+    "tools": [
+      "Postman", "Selenium", "Pytest", "Appium", "Playwright", "JMeter", "TestRail", "Kiwi TCMS"
+    ],
+    "databases": [
+      "PostgreSQL", "MySQL", "MongoDB", "EdgeDB", "Oracle"
+    ],
+    "languages": [
+      "Python", "Java", "TypeScript"
+    ],
+    "cicd": [
+      "GitLab CI"
+    ],
+    "methodologies": [
+      "Agile", "Scrum", "SAFe"
+    ],
+    "projectManagement": [
+      "JIRA", "HelpDesk", "Confluence", "Swagger", "Figma", "Google Suite"
+    ],
+    "communication": [
+      "Slack", "Zoom", "Discord", "Skype", "Keybase"
+    ],
+    "spokenLanguages": [
+      "Malayalam (Native)", "English (Full Professional)", "Hindi (Limited Working)"
+    ]
+  },
+  "interests": [
+    "Gaming",
+    "Hiking", 
+    "Traveling"
+  ]
+}

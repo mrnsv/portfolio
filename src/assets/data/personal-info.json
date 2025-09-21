@@ -1,0 +1,53 @@
+{
+  "personalInfo": {
+    "name": "Nithin Shaji Valavil",
+    "title": "Senior Quality Analyst Engineer",
+    "email": "mrnsv01@gmail.com",
+    "phone": "+91 85470 50472",
+    "location": "Trivandrum, India",
+    "bio": "Results-driven QA Engineer with expertise in manual and automated testing. Skilled in test automation, API testing, database validation, and Agile methodologies. Proven ability to reduce defects, enhance test coverage, and optimize CI/CD pipelines. Strong leadership, mentoring, and cross-functional collaboration skills.",
+    "summary": "Results-driven QA Engineer with expertise in manual and automated testing, skilled in test automation, API testing, and Agile methodologies.",
+    "avatar": "/assets/images/profile.jpg",
+    "resume": "/assets/documents/resume.pdf"
+  },
+  "socialLinks": [
+    {
+      "name": "GitHub",
+      "url": "https://github.com/mrnsv/",
+      "icon": "github",
+      "display": true
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://linkedin.com/in/nithinshajivalavil",
+      "icon": "linkedin",
+      "display": true
+    },
+    {
+      "name": "Email",
+      "url": "mailto:mrnsv01@gmail.com",
+      "icon": "email",
+      "display": true
+    }
+  ],
+  "navigation": [
+    {
+      "path": "/",
+      "label": "About",
+      "icon": "person",
+      "display": true
+    },
+    {
+      "path": "/projects",
+      "label": "Ideas",
+      "icon": "work",
+      "display": true
+    },
+    {
+      "path": "/experience",
+      "label": "CV",
+      "icon": "timeline",
+      "display": true
+    }
+  ]
+}

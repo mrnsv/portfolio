@@ -1,0 +1,238 @@
+{
+  "projects": [
+    {
+      "id": "casmex",
+      "title": "CASMEX",
+      "subtitle": "Core Application System For Money Exchange",
+      "category": "FINANCE",
+      "categoryNumber": "01",
+      "description": "Played a pivotal role in the rigorous testing and successful deployment of a robust web-based platform designed to facilitate seamless transactions within the money exchange and banking sectors.",
+      "longDescription": "CASMEX is a comprehensive financial platform that enables seamless money exchange and banking transactions. As a QA Engineer, I was responsible for ensuring optimal performance and reliability through comprehensive testing strategies including functional, integration, and performance testing.",
+      "image": "/assets/images/projects/casmex.jpg",
+      "technologies": ["Manual Testing", "Automation Testing", "API Testing", "Postman", "Selenium", "Performance Testing"],
+      "liveUrl": null,
+      "githubUrl": null,
+      "featured": true,
+      "date": "2020-2021",
+      "company": "Distinct Infotech Solutions",
+      "role": "QA Engineer",
+      "duration": "18 months",
+      "achievements": [
+        "Successfully deployed robust web-based platform for money exchange sector",
+        "Ensured optimal performance and reliability through comprehensive testing",
+        "Played pivotal role in rigorous testing and deployment process"
+      ],
+      "challenges": [
+        "Complex financial transaction validation",
+        "Ensuring security and compliance standards",
+        "Performance optimization for high-volume transactions"
+      ]
+    },
+    {
+      "id": "ishield",
+      "title": "iShield",
+      "subtitle": "Anti Money Laundering Solution",
+      "category": "FINANCE",
+      "categoryNumber": "02",
+      "description": "Spearheaded testing efforts for a comprehensive compliance solution tailored for financial institutions, ensuring adherence to stringent regulatory standards.",
+      "longDescription": "iShield is an advanced Anti Money Laundering (AML) solution designed for financial institutions to ensure compliance with regulatory standards. The system provides comprehensive monitoring, detection, and reporting capabilities to mitigate risks associated with money laundering activities.",
+      "image": "/assets/images/projects/ishield.jpg",
+      "technologies": ["Manual Testing", "Compliance Testing", "Security Testing", "API Testing", "Database Testing"],
+      "liveUrl": null,
+      "githubUrl": null,
+      "featured": true,
+      "date": "2020-2021",
+      "company": "Distinct Infotech Solutions",
+      "role": "QA Engineer",
+      "duration": "12 months",
+      "achievements": [
+        "Ensured adherence to stringent regulatory standards",
+        "Mitigated risks associated with money laundering",
+        "Comprehensive compliance solution for financial institutions"
+      ],
+      "challenges": [
+        "Complex regulatory compliance requirements",
+        "Security and privacy considerations",
+        "Integration with existing financial systems"
+      ]
+    },
+    {
+      "id": "oneg8",
+      "title": "OneG8",
+      "subtitle": "Social Media & E-commerce Super App",
+      "category": "WEB INTERFACE",
+      "categoryNumber": "03",
+      "description": "Led comprehensive testing efforts for OneG8, an all-in-one super app integrating social media and e-commerce functionalities with seamless user experience.",
+      "longDescription": "OneG8 is a comprehensive super app that combines social media and e-commerce functionalities. The platform includes real-time interactions, content sharing, online transactions, and secure payment processing. I ensured seamless user experience across diverse modules and validated end-to-end workflows.",
+      "image": "/assets/images/projects/oneg8.jpg",
+      "technologies": ["Mobile Testing", "E-commerce Testing", "Payment Gateway Testing", "Social Media Testing", "API Testing"],
+      "liveUrl": null,
+      "githubUrl": null,
+      "featured": true,
+      "date": "2021-2022",
+      "company": "Alokin Software Pvt. Ltd.",
+      "role": "Senior QA Engineer",
+      "duration": "8 months",
+      "achievements": [
+        "Ensured seamless user experience across diverse modules",
+        "Validated end-to-end workflows optimizing performance and security",
+        "Spearheaded integration testing for third-party services",
+        "Enhanced engagement and drove business growth"
+      ],
+      "challenges": [
+        "Complex integration between social media and e-commerce",
+        "Real-time interaction testing",
+        "Secure payment processing validation",
+        "Third-party service integration"
+      ]
+    },
+    {
+      "id": "hummingbird",
+      "title": "Hummingbird",
+      "subtitle": "Property Management System",
+      "category": "REAL ESTATE",
+      "categoryNumber": "04",
+      "description": "Led testing initiatives for a sophisticated property management system (PMS) catering to the self-storage industry, ensuring flawless functionality of critical features.",
+      "longDescription": "Hummingbird is a comprehensive property management system designed specifically for the self-storage industry. The system provides complete operational management including tenant management, billing, reporting, and facility operations. I ensured flawless functionality of critical features and enhanced operational efficiency.",
+      "image": "/assets/images/projects/hummingbird.jpg",
+      "technologies": ["Web Application Testing", "Property Management Testing", "Billing System Testing", "Reporting Testing"],
+      "liveUrl": null,
+      "githubUrl": null,
+      "featured": false,
+      "date": "2021-2022",
+      "company": "Alokin Software Pvt. Ltd.",
+      "role": "Senior QA Engineer",
+      "duration": "6 months",
+      "achievements": [
+        "Ensured flawless functionality of critical features",
+        "Enhanced operational efficiency for self-storage clients",
+        "Comprehensive testing of property management workflows"
+      ],
+      "challenges": [
+        "Complex property management workflows",
+        "Billing and payment processing",
+        "Multi-tenant system testing"
+      ]
+    },
+    {
+      "id": "schemacraft",
+      "title": "Schemacraft",
+      "subtitle": "JSON Schema Generator",
+      "category": "DEVELOPER TOOLS",
+      "categoryNumber": "05",
+      "description": "Schemacraft is a web application designed to streamline the process of creating JSON schemas from raw JSON data with user-friendly interface and one-click conversion.",
+      "longDescription": "Schemacraft is a developer-focused web application that simplifies the process of creating JSON schemas from raw JSON data. The application features a user-friendly interface, one-click conversion capabilities, dark mode support, and welcomes contributions from users to enhance schema-crafting capabilities.",
+      "image": "/assets/images/projects/schemacraft.jpg",
+      "technologies": ["Web Application Testing", "JSON Schema Testing", "UI/UX Testing", "Developer Tools Testing"],
+      "liveUrl": "https://schemacraft.com",
+      "githubUrl": "https://github.com/mrnsv/schemacraft",
+      "featured": false,
+      "date": "2023",
+      "company": "Personal Project",
+      "role": "Developer & QA",
+      "duration": "3 months",
+      "achievements": [
+        "Streamlined JSON schema creation process",
+        "Implemented user-friendly interface with dark mode",
+        "One-click conversion feature for developers",
+        "Open-source project with community contributions"
+      ],
+      "challenges": [
+        "Complex JSON structure parsing",
+        "Schema validation accuracy",
+        "User experience optimization",
+        "Cross-browser compatibility"
+      ]
+    },
+    {
+      "id": "stealth-cipher",
+      "title": "Stealth Cipher",
+      "subtitle": "Encrypted Communication Solution",
+      "category": "SECURITY",
+      "categoryNumber": "06",
+      "description": "Contributed to the testing of Stealth Cipher, a state-of-the-art security solution providing encrypted communication and data protection.",
+      "longDescription": "Stealth Cipher is an advanced security solution designed to provide encrypted communication and comprehensive data protection. The system safeguards sensitive information from unauthorized access and potential security threats through robust encryption mechanisms and secure communication protocols.",
+      "image": "/assets/images/projects/stealth-cipher.jpg",
+      "technologies": ["Security Testing", "Encryption Testing", "Communication Testing", "Penetration Testing"],
+      "liveUrl": null,
+      "githubUrl": null,
+      "featured": false,
+      "date": "2022",
+      "company": "Alokin Software Pvt. Ltd.",
+      "role": "Senior QA Engineer",
+      "duration": "4 months",
+      "achievements": [
+        "Ensured robust encryption mechanisms",
+        "Validated secure communication protocols",
+        "Protected sensitive information from unauthorized access",
+        "Comprehensive security testing and validation"
+      ],
+      "challenges": [
+        "Complex encryption algorithm testing",
+        "Security vulnerability assessment",
+        "Performance impact of encryption",
+        "Compliance with security standards"
+      ]
+    },
+    {
+      "id": "pixely",
+      "title": "Pixely",
+      "subtitle": "Photo Booth App",
+      "category": "MOBILE",
+      "categoryNumber": "07",
+      "description": "Contributed to the testing and refinement of Pixely, a versatile photo booth application designed to elevate event experiences.",
+      "longDescription": "Pixely is a mobile photo booth application designed to enhance event experiences. The app provides seamless functionality, customizable features, and real-time photo sharing capabilities to meet the diverse needs of users at various events and occasions.",
+      "image": "/assets/images/projects/pixely.jpg",
+      "technologies": ["Mobile Testing", "iOS Testing", "Android Testing", "Photo Processing Testing", "Real-time Testing"],
+      "liveUrl": null,
+      "githubUrl": null,
+      "featured": false,
+      "date": "2022",
+      "company": "Alokin Software Pvt. Ltd.",
+      "role": "Senior QA Engineer",
+      "duration": "3 months",
+      "achievements": [
+        "Enhanced event experiences through photo booth functionality",
+        "Ensured seamless functionality and customizable features",
+        "Validated real-time photo sharing capabilities",
+        "Cross-platform mobile testing"
+      ],
+      "challenges": [
+        "Mobile device compatibility",
+        "Real-time photo processing",
+        "Event environment testing",
+        "User experience optimization"
+      ]
+    },
+    {
+      "id": "data-nexus",
+      "title": "Data Nexus",
+      "subtitle": "Data Integration Platform",
+      "category": "DATA MANAGEMENT",
+      "categoryNumber": "08",
+      "description": "Played a key role in testing Data Nexus, a robust data integration platform designed to facilitate seamless data exchange across disparate sources.",
+      "longDescription": "Data Nexus is a comprehensive data integration platform that enables seamless data exchange across disparate sources. The system ensures data accuracy, integrity, and security while providing efficient data transformation and synchronization capabilities for enterprise environments.",
+      "image": "/assets/images/projects/data-nexus.jpg",
+      "technologies": ["Data Integration Testing", "ETL Testing", "Database Testing", "API Testing", "Data Validation"],
+      "liveUrl": null,
+      "githubUrl": null,
+      "featured": false,
+      "date": "2021",
+      "company": "Alokin Software Pvt. Ltd.",
+      "role": "Senior QA Engineer",
+      "duration": "5 months",
+      "achievements": [
+        "Ensured data accuracy and integrity across disparate sources",
+        "Validated seamless data exchange capabilities",
+        "Comprehensive data security testing",
+        "Enterprise-level data integration validation"
+      ],
+      "challenges": [
+        "Complex data transformation testing",
+        "Data integrity validation",
+        "Performance with large datasets",
+        "Cross-platform data synchronization"
+      ]
+    }
+  ]
+}
