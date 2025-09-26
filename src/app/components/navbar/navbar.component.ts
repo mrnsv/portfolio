@@ -12,13 +12,15 @@ import { PersonalInfo, Project } from '../../shared/models';
   imports: [CommonModule, RouterModule],
   template: `
     <nav class="navbar">
-      <div class="navbar-header">
+      <!-- 1. Title Section -->
+      <div class="navbar-section title-section">
         <div class="logo-button" (click)="navigateToHome()" [class.active]="isHomePage">
           <span class="logo-text">MR. NSV</span>
         </div>
       </div>
 
-      <div class="navbar-section main-nav">
+      <!-- 2. Pages Section -->
+      <div class="navbar-section pages-section">
         <ul class="navbar-menu">
           <li class="navbar-item">
             <a routerLink="/about" routerLinkActive="active" class="navbar-link">About</a>
@@ -32,53 +34,57 @@ import { PersonalInfo, Project } from '../../shared/models';
         </ul>
       </div>
 
-      <div class="section-divider"></div>
+      <!-- 3. Projects Section -->
+      <div class="navbar-section projects-section">
+        
+        <div class="project-category">
+          <h4 class="category-title">Finance</h4>
+          <ul class="navbar-menu">
+            <li class="navbar-item">
+              <a routerLink="/projects" class="navbar-link">CASMEX</a>
+            </li>
+            <li class="navbar-item">
+              <a routerLink="/projects" class="navbar-link">iShield</a>
+            </li>
+          </ul>
+        </div>
 
-      <div class="navbar-section">
-        <h3 class="section-title">FINANCE</h3>
-        <ul class="navbar-menu">
-          <li class="navbar-item">
-            <a routerLink="/projects" class="navbar-link">CASMEX</a>
-          </li>
-          <li class="navbar-item">
-            <a routerLink="/projects" class="navbar-link">iShield</a>
-          </li>
-        </ul>
+        <div class="project-category">
+          <h4 class="category-title">Real Estate</h4>
+          <ul class="navbar-menu">
+            <li class="navbar-item">
+              <a routerLink="/projects" class="navbar-link">Hummingbird</a>
+            </li>
+            <li class="navbar-item">
+              <a routerLink="/projects" class="navbar-link">Mariposa</a>
+            </li>
+            <li class="navbar-item">
+              <a routerLink="/projects" class="navbar-link">Nectar</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="project-category">
+          <h4 class="category-title">E-Commerce</h4>
+          <ul class="navbar-menu">
+            <li class="navbar-item">
+              <a routerLink="/projects" class="navbar-link">OneG8</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="project-category">
+          <h4 class="category-title">Photography</h4>
+          <ul class="navbar-menu">
+            <li class="navbar-item">
+              <a routerLink="/projects" class="navbar-link">Pixely</a>
+            </li>
+          </ul>
+        </div>
       </div>
 
-      <div class="navbar-section">
-        <h3 class="section-title">WEB INTERFACE</h3>
-        <ul class="navbar-menu">
-          <li class="navbar-item">
-            <a routerLink="/projects" class="navbar-link">OneG8</a>
-          </li>
-          <li class="navbar-item">
-            <a routerLink="/projects" class="navbar-link">Schemacraft</a>
-          </li>
-          <li class="navbar-item">
-            <a routerLink="/projects" class="navbar-link">Hummingbird</a>
-          </li>
-          <li class="navbar-item">
-            <a routerLink="/projects" class="navbar-link">Data Nexus</a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="navbar-section">
-        <h3 class="section-title">ENTERPRISE</h3>
-        <ul class="navbar-menu">
-          <li class="navbar-item">
-            <a routerLink="/projects" class="navbar-link">Stealth Cipher</a>
-          </li>
-          <li class="navbar-item">
-            <a routerLink="/projects" class="navbar-link">Pixely</a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="section-divider"></div>
-
-      <div class="navbar-section">
+      <!-- 4. Contact Section -->
+      <div class="navbar-section contact-section">
         <h3 class="section-title">CONTACT</h3>
         <ul class="navbar-menu">
           <li class="navbar-item">
@@ -96,7 +102,8 @@ import { PersonalInfo, Project } from '../../shared/models';
         </ul>
       </div>
 
-      <div class="navbar-footer">
+      <!-- 5. Buttons Section -->
+      <div class="navbar-section buttons-section">
         <button
           class="theme-toggle"
           (click)="toggleTheme()"

@@ -1,269 +1,278 @@
 .about-container {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 2rem 0;
-  margin-left: 250px; // Account for fixed sidebar with minimal gap
+  max-width: none; // Use full available width
+  margin: 0;
+  padding: 1rem 0.5rem; // Reduced padding to match Home page
   
   @media (max-width: 768px) {
-    margin-left: 0;
-    padding: 1rem;
+    padding: 0.5rem;
   }
 }
 
 .about-header {
-  margin-bottom: 3rem;
-  padding: 0 1rem;
+  margin-bottom: 2rem; // Reduced from 4rem to match Home page
+  padding: 0 0.5rem; // Reduced from 1rem to match Home page
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
   
-  .main-title {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: var(--primary-text);
-    margin-bottom: 0.5rem;
-    margin-top: 0;
-    line-height: 1.1;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 0.5rem; // Reduced gap to match Home page
+    padding: 0 0.5rem;
   }
   
-  .subtitle {
-    font-size: 1.25rem;
-    font-weight: 500;
+  .header-quote {
+    font-size: 0.75rem;
+    font-weight: 300;
     color: var(--secondary-text);
-    margin: 0;
-    line-height: 1.3;
+    opacity: 0.7;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+  
+  .name-section {
+    flex: 1;
+    
+    .main-name {
+      font-size: 3.5rem;
+      font-weight: 300;
+      color: var(--primary-text);
+      margin: 0 0 0.5rem 0;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      
+      @media (max-width: 768px) {
+        font-size: 2.5rem;
+      }
+    }
+    
+    .malayalam-name {
+      font-size: 1.5rem;
+      font-weight: 300;
+      color: var(--secondary-text);
+      margin: 0;
+      line-height: 1.2;
+      
+      @media (max-width: 768px) {
+        font-size: 1.25rem;
+      }
+    }
+  }
+  
+  .header-images {
+    display: flex;
+    gap: 1rem;
+    flex-shrink: 0;
+    
+    @media (max-width: 768px) {
+      width: 100%;
+      justify-content: center;
+    }
   }
 }
 
 .about-content {
-  padding: 0 1rem;
+  padding: 0 0.5rem; // Reduced from 1rem to match Home page
 }
 
-.profile-section {
+.content-section {
+  margin-bottom: 2.5rem; // Reduced from 4rem to match Home page
   display: flex;
   gap: 3rem;
-  margin-bottom: 4rem;
   align-items: flex-start;
   
   @media (max-width: 768px) {
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem; // Reduced gap to match Home page
   }
-}
-
-.profile-image {
-  flex-shrink: 0;
   
-  img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 2px solid var(--border);
-    transition: all 0.3s ease;
+  .section-content {
+    flex: 1;
     
-    &:hover {
-      transform: scale(1.02);
-      border-color: var(--accent);
+    .section-label {
+      font-size: 0.75rem;
+      font-weight: 300;
+      color: var(--secondary-text);
+      opacity: 0.7;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem; // Reduced from 2rem to match Home page
+    }
+    
+    .section-text {
+      font-size: 1rem;
+      font-weight: 300;
+      color: var(--primary-text);
+      line-height: 1.6;
+      max-width: none; // Use full width to match Home page
+    }
+  }
+  
+  .section-images {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem; // Reduced gap to match Home page
+    flex-shrink: 0;
+    
+    @media (max-width: 768px) {
+      width: 100%;
+      flex-direction: row;
+      justify-content: center;
     }
   }
 }
 
-.profile-info {
-  flex: 1;
-  
-  .profile-name {
-    font-size: 2rem;
-    font-weight: 700;
-    color: var(--primary-text);
-    margin-bottom: 0.5rem;
-    margin-top: 0;
-    line-height: 1.1;
+.info-section {
+  .section-content {
+    order: 2;
   }
   
-  .profile-title {
-    font-size: 1.125rem;
-    font-weight: 500;
-    color: var(--secondary-text);
-    margin-bottom: 0.5rem;
-    margin-top: 0;
-  }
-  
-  .profile-location {
-    font-size: 1rem;
-    color: var(--secondary-text);
-    margin-bottom: 2rem;
-    margin-top: 0;
+  .section-images {
+    order: 1;
   }
 }
 
-.contact-info {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-}
-
-.contact-item {
-  display: flex;
-  align-items: center;
-  padding: 0.5rem 0;
-  text-decoration: none;
-  color: var(--secondary-text);
-  transition: all 0.2s ease;
-  font-size: 0.95rem;
-  
-  &:hover {
-    color: var(--primary-text);
-    transform: translateX(4px);
+.education-section {
+  .section-content {
+    order: 1;
   }
   
-  .contact-icon {
-    font-size: 1rem;
-    margin-right: 0.75rem;
-    width: 20px;
-    text-align: center;
-  }
-}
-
-.professional-summary {
-  margin-bottom: 4rem;
-  
-  h3 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--primary-text);
-    margin-bottom: 1.5rem;
-    margin-top: 0;
+  .section-images {
+    order: 2;
   }
   
-  p {
-    font-size: 1rem;
-    color: var(--secondary-text);
-    line-height: 1.6;
-    margin: 0;
-    max-width: 800px;
-  }
-}
-
-.core-expertise {
-  margin-bottom: 4rem;
-  
-  h3 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--primary-text);
-    margin-bottom: 2rem;
-    margin-top: 0;
-  }
-}
-
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-}
-
-.skill-category {
-  h4 {
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--primary-text);
-    margin-bottom: 1rem;
-    margin-top: 0;
-  }
-}
-
-.skill-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.skill-tag {
-  padding: 0.375rem 0.75rem;
-  background-color: var(--sidebar);
-  color: var(--secondary-text);
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  font-size: 0.8rem;
-  font-weight: 500;
-  transition: all 0.2s ease;
-  
-  &:hover {
-    background-color: var(--hover);
-    color: var(--primary-text);
-  }
-}
-
-.certifications {
-  margin-bottom: 4rem;
-  
-  h3 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--primary-text);
-    margin-bottom: 2rem;
-    margin-top: 0;
-  }
-}
-
-.certifications-list {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.cert-item {
-  h4 {
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--primary-text);
-    margin-bottom: 0.5rem;
-    margin-top: 0;
-  }
-  
-  .cert-issuer {
-    font-size: 0.875rem;
-    color: var(--secondary-text);
-    margin-bottom: 0.25rem;
-    margin-top: 0;
-  }
-  
-  .cert-id {
-    font-size: 0.8rem;
-    color: var(--secondary-text);
-    margin: 0;
-    opacity: 0.8;
-  }
-}
-
-.interests {
-  margin-bottom: 2rem;
-  
-  h3 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--primary-text);
-    margin-bottom: 1.5rem;
-    margin-top: 0;
-  }
-}
-
-.interests-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  
-  li {
-    font-size: 1rem;
-    color: var(--secondary-text);
-    margin-bottom: 0.5rem;
-    padding-left: 0;
+  .education-item {
+    margin-bottom: 1rem; // Reduced from 1.5rem to match Home page
     
     &:last-child {
       margin-bottom: 0;
     }
+    
+    .education-title {
+      font-size: 1.25rem;
+      font-weight: 400;
+      color: var(--primary-text);
+      margin-bottom: 0.25rem;
+    }
+    
+    .education-subtitle {
+      font-size: 0.9rem;
+      font-weight: 300;
+      color: var(--secondary-text);
+    }
+  }
+}
+
+.certifications-section {
+  .certification-item {
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--primary-text);
+    margin-bottom: 0.5rem; // Reduced from 0.75rem to match Home page
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.philosophy-section {
+  .philosophy-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem; // Reduced from 3rem to match Home page
+    
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      gap: 1rem; // Reduced from 2rem to match Home page
+    }
+  }
+  
+  .philosophy-column {
+    .philosophy-title {
+      font-size: 1.125rem;
+      font-weight: 400;
+      color: var(--primary-text);
+      margin-bottom: 1rem;
+    }
+    
+    .philosophy-text {
+      font-size: 0.95rem;
+      font-weight: 300;
+      color: var(--secondary-text);
+      line-height: 1.5;
+    }
+  }
+}
+
+.interests-section {
+  .section-content {
+    order: 1;
+  }
+  
+  .section-images {
+    order: 2;
+    flex-direction: row;
+    
+    @media (max-width: 768px) {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+  
+  .interests-list {
+    .interest-item {
+      font-size: 1rem;
+      font-weight: 300;
+      color: var(--primary-text);
+      margin-bottom: 0.5rem; // Reduced from 0.75rem to match Home page
+      
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.about-image {
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  &.architecture {
+    border: 1px solid #e8f4f8;
+  }
+  
+  &.profile {
+    border: 1px solid #fff3cd;
+  }
+  
+  &.craft {
+    border: 1px solid #f8f9fa;
+  }
+  
+  &.garden {
+    border: 1px solid #d4edda;
+  }
+  
+  &.campus {
+    border: 1px solid #e2e3e5;
+  }
+  
+  &.snowboarding {
+    border: 1px solid #cce5ff;
+  }
+  
+  &.cafe {
+    border: 1px solid #f5e6d3;
   }
 }
