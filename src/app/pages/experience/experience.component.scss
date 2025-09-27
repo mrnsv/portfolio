@@ -366,8 +366,8 @@
   border: 1px solid var(--border);
   border-radius: 16px;
   padding: 2rem;
-  min-width: 350px;
-  max-width: 350px;
+  min-width: 400px;
+  max-width: 400px;
   
   @media (max-width: 768px) {
     min-width: 280px;
@@ -376,7 +376,7 @@
   }
   
   .card-title {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     font-weight: 600;
     color: var(--primary-text);
     margin: 0 0 1.5rem 0;
