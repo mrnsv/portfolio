@@ -295,26 +295,11 @@
   flex: 1;
   overflow-y: auto;
   overflow-x: hidden;
-  scrollbar-width: thin;
-  scrollbar-color: var(--accent) transparent;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
   
   &::-webkit-scrollbar {
-    width: 4px;
-  }
-  
-  &::-webkit-scrollbar-track {
-    background: transparent;
-  }
-  
-  &::-webkit-scrollbar-thumb {
-    background: var(--accent);
-    border-radius: 2px;
-    opacity: 0.6;
-  }
-  
-  &::-webkit-scrollbar-thumb:hover {
-    background: #6366f1;
-    opacity: 1;
+    display: none; /* WebKit */
   }
   
   .description {

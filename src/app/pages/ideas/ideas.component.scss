@@ -78,7 +78,7 @@
   overflow-x: hidden;
   padding: 0 0.5rem 2rem 0.5rem; // Add bottom padding for scroll space
   height: calc(100vh - 220px); // Increased to account for header and footer
-  scrollbar-width: thin;
+  scrollbar-width: none;
   scrollbar-color: var(--accent) transparent;
   
   &::-webkit-scrollbar {
