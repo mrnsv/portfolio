@@ -17,13 +17,18 @@ import { Observable } from 'rxjs';
         <div class="welcome-section">
           <h1 class="welcome-title">{{ greetingText }}</h1>
           <p class="welcome-subtitle">{{ greetingSubtitle }}</p>
-          <p class="current-time">{{ currentDateTime | date:'EEEE, d MMM h:mm a' }}</p>
+          <p class="intro-text">
+            A Quality Assurance Engineer crafting seamless digital experiences through meticulous testing and automation. 
+            I bridge human expectations with technical excellence, ensuring technology works beautifully for real people.
+          </p>
         </div>
         <div class="profile-summary" *ngIf="personalInfo$ | async as personalInfo">
+          <div class="time-section">
+            <p class="current-time">{{ currentDateTime | date:'EEEE, d MMM h:mm a' }}</p>
+          </div>
           <div class="profile-info">
             <h2 class="profile-name">{{ personalInfo.name }}</h2>
             <p class="profile-title">{{ personalInfo.title }}</p>
-            <p class="profile-location">{{ personalInfo.location }}</p>
           </div>
         </div>
       </div>

@@ -29,7 +29,7 @@ import { PersonalInfo, Project } from '../../shared/models';
             <a routerLink="/ideas" routerLinkActive="active" class="navbar-link">Ideas</a>
           </li>
           <li class="navbar-item">
-            <a routerLink="/experience" routerLinkActive="active" class="navbar-link">CV</a>
+            <a routerLink="/experience" routerLinkActive="active" class="navbar-link">Experience</a>
           </li>
         </ul>
       </div>
