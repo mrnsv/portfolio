@@ -10,19 +10,18 @@ import { PersonalInfo, Experience } from '../../shared/models';
   imports: [CommonModule],
   template: `
     <div class="about-container">
-      <div class="about-header">
-        <div class="header-quote">A JOURNEY THROUGH DETAILS...</div>
-        <div class="name-section">
-          <h1 class="main-name">Nithin Shaji Valavil</h1>
-          <div class="malayalam-name">നിതിൻ ഷാജി വളവിൽ</div>
-        </div>
-        <div class="header-images">
-          <img src="/assets/images/architecture.jpg" alt="Architecture" class="about-image architecture" loading="lazy">
-          <img src="/assets/images/profile.jpg" alt="Profile" class="about-image profile" loading="lazy">
-        </div>
-      </div>
-
       <div class="about-content">
+        <div class="about-header">
+          <div class="header-quote">A JOURNEY THROUGH DETAILS...</div>
+          <div class="name-section">
+            <h1 class="main-name">Nithin Shaji Valavil</h1>
+            <div class="malayalam-name">നിതിൻ ഷാജി വളവിൽ</div>
+          </div>
+          <div class="header-images">
+            <img src="/assets/images/architecture.jpg" alt="Architecture" class="about-image architecture" loading="lazy">
+            <img src="/assets/images/profile.jpg" alt="Profile" class="about-image profile" loading="lazy">
+          </div>
+        </div>
         <div class="content-section info-section">
           <div class="section-images">
             <img src="/assets/images/craft.jpg" alt="My craft began here" class="about-image craft" loading="lazy">

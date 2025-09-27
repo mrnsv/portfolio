@@ -1,12 +1,26 @@
 .about-container {
   max-width: none; // Use full available width
   margin: 0;
-  padding: 1rem 0.5rem; // Reduced padding to match Home page
+  padding: 1rem 0.5rem 4rem 0.5rem; // Add bottom padding to prevent footer cutoff
   background: linear-gradient(135deg, var(--background) 0%, rgba(99, 102, 241, 0.02) 50%, var(--background) 100%);
-  min-height: 100vh;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--border), transparent);
+  }
   
   @media (max-width: 768px) {
     padding: 0.5rem;
+    height: 100vh;
   }
 }
 
@@ -84,7 +98,33 @@
 }
 
 .about-content {
-  padding: 0 0.5rem; // Reduced from 1rem to match Home page
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0 0.5rem 2rem 0.5rem; // Add bottom padding for scroll space
+  height: 100%;
+  scrollbar-width: none;
+  scrollbar-color: var(--accent) transparent;
+  
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    background: var(--accent);
+    border-radius: 3px;
+  }
+  
+  &::-webkit-scrollbar-thumb:hover {
+    background: #6366f1;
+  }
+  
+  @media (max-width: 768px) {
+    padding: 0 0.5rem 2rem 0.5rem;
+  }
 }
 
 .content-section {
