@@ -19,21 +19,23 @@ import { CommonModule } from '@angular/common';
       <div class="divider"></div>
 
       <div class="ideas-grid">
-        <div class="idea-card" *ngFor="let idea of ideas; let i = index" [style.animation-delay]="(i * 0.1) + 's'">
-          <div class="card-header">
-            <div class="card-icon">{{ idea.icon }}</div>
-            <div class="card-year">{{ idea.date }}</div>
-          </div>
-          <div class="card-content">
-            <h3 class="card-title">{{ idea.title }}</h3>
-            <p class="card-description">{{ idea.description }}</p>
-            <div class="card-tags">
-              <span class="tag" *ngFor="let tag of idea.tags">{{ tag }}</span>
+        <div class="ideas-grid-content">
+          <div class="idea-card" *ngFor="let idea of ideas; let i = index" [style.animation-delay]="(i * 0.1) + 's'">
+            <div class="card-header">
+              <div class="card-icon">{{ idea.icon }}</div>
+              <div class="card-year">{{ idea.date }}</div>
             </div>
-          </div>
-          <div class="card-footer">
-            <div class="card-status">{{ idea.status }}</div>
-            <div class="card-arrow">→</div>
+            <div class="card-content">
+              <h3 class="card-title">{{ idea.title }}</h3>
+              <p class="card-description">{{ idea.description }}</p>
+              <div class="card-tags">
+                <span class="tag" *ngFor="let tag of idea.tags">{{ tag }}</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <div class="card-status">{{ idea.status }}</div>
+              <div class="card-arrow">→</div>
+            </div>
           </div>
         </div>
       </div>
