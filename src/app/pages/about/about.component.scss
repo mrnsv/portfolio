@@ -100,7 +100,7 @@
 .about-content {
   overflow-y: auto;
   overflow-x: hidden;
-  padding: 0 0.5rem 2rem 0.5rem; // Add bottom padding for scroll space
+  padding: 0.5rem 0.5rem 2rem 0.5rem; // Add bottom padding for scroll space
   height: 100%;
   scrollbar-width: none;
   scrollbar-color: var(--accent) transparent;
