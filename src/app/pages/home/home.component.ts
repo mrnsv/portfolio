@@ -12,51 +12,112 @@ import { Observable } from 'rxjs';
   imports: [CommonModule, RouterModule, SectionHeaderComponent],
   template: `
     <div class="home-container">
-      <div class="top-section">
-        <div class="greeting-section">
-          <p class="greeting-text">{{ greetingText }}</p>
-          <p class="greeting-subtitle">{{ greetingSubtitle }}</p>
+      <!-- Dashboard Header -->
+      <div class="dashboard-header">
+        <div class="welcome-section">
+          <h1 class="welcome-title">{{ greetingText }}</h1>
+          <p class="welcome-subtitle">{{ greetingSubtitle }}</p>
+          <p class="current-time">{{ currentDateTime | date:'EEEE, d MMM h:mm a' }}</p>
         </div>
-        <div class="datetime-section">
-          <p class="datetime-text">{{ currentDateTime | date:'EEEE, d MMM h:mm a' }}</p>
-        </div>
-      </div>
-
-      <div class="bio-section" *ngIf="personalInfo$ | async as personalInfo">
-        <p class="bio-text">
-          {{ personalInfo.name }} is a {{ personalInfo.title.toLowerCase() }}
-          {{ personalInfo.summary }}
-        </p>
-      </div>
-
-      <div class="craft-section">
-        <h3 class="section-heading">CRAFT</h3>
-
-        <div class="projects-grid">
-          <div class="project-card" *ngFor="let project of featuredProjects$ | async">
-            <div class="project-image-container">
-              <div class="project-image">
-                <div class="project-icon">{{ getProjectIcon(project.category) }}</div>
-              </div>
-            </div>
-            <div class="project-info">
-              <h4 class="project-category">{{ project.categoryNumber }} | {{ project.category }}</h4>
-              <h2 class="project-title">{{ project.title }}</h2>
-              <h3 class="project-subtitle">{{ project.subtitle }}</h3>
-              <p class="project-description">{{ project.description }}</p>
-            </div>
+        <div class="profile-summary" *ngIf="personalInfo$ | async as personalInfo">
+          <div class="profile-info">
+            <h2 class="profile-name">{{ personalInfo.name }}</h2>
+            <p class="profile-title">{{ personalInfo.title }}</p>
+            <p class="profile-location">{{ personalInfo.location }}</p>
           </div>
         </div>
       </div>
 
-      <div class="interdisciplinary-section">
-        <h3 class="section-heading">INTERDISCIPLINARY</h3>
-        <div class="interdisciplinary-grid">
-          <div class="interdisciplinary-card" *ngFor="let project of (projects$ | async)?.slice(4, 8)">
-            <div class="card-image">
-              <div class="card-icon">{{ getProjectIcon(project.category) }}</div>
+      <!-- Dashboard Stats -->
+      <div class="dashboard-stats">
+        <div class="stat-card">
+          <div class="stat-icon">💼</div>
+          <div class="stat-content">
+            <h3 class="stat-number">{{ (projects$ | async)?.length || 0 }}</h3>
+            <p class="stat-label">Projects</p>
+          </div>
+        </div>
+        
+        <div class="stat-card">
+          <div class="stat-icon">💡</div>
+          <div class="stat-content">
+            <h3 class="stat-number">7</h3>
+            <p class="stat-label">Ideas</p>
+          </div>
+        </div>
+        
+        <div class="stat-card">
+          <div class="stat-icon">🏆</div>
+          <div class="stat-content">
+            <h3 class="stat-number">2</h3>
+            <p class="stat-label">Certifications</p>
+          </div>
+        </div>
+        
+        <div class="stat-card">
+          <div class="stat-icon">📈</div>
+          <div class="stat-content">
+            <h3 class="stat-number">7+</h3>
+            <p class="stat-label">Years Experience</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Overview -->
+      <div class="overview-section">
+        <h3 class="section-heading">OVERVIEW</h3>
+        <div class="overview-grid">
+          <div class="overview-card">
+            <div class="card-header">
+              <h4 class="card-title">Recent Projects</h4>
+              <span class="card-count">{{ (projects$ | async)?.length || 0 }}</span>
             </div>
-            <h4 class="card-title">{{ project.title }}</h4>
+            <div class="card-content">
+              <div class="project-list">
+                <div class="project-item" *ngFor="let project of (projects$ | async)?.slice(0, 3)">
+                  <span class="project-name">{{ project.title }}</span>
+                  <span class="project-category">{{ project.category }}</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <a routerLink="/projects" class="view-all-link">View All Projects →</a>
+            </div>
+          </div>
+
+          <div class="overview-card">
+            <div class="card-header">
+              <h4 class="card-title">Latest Ideas</h4>
+              <span class="card-count">7</span>
+            </div>
+            <div class="card-content">
+              <div class="idea-list">
+                <div class="idea-item" *ngFor="let idea of latestIdeas">
+                  <span class="idea-name">{{ idea.title }}</span>
+                  <span class="idea-status">{{ idea.status }}</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <a routerLink="/ideas" class="view-all-link">View All Ideas →</a>
+            </div>
+          </div>
+
+          <div class="overview-card">
+            <div class="card-header">
+              <h4 class="card-title">Skills & Expertise</h4>
+              <span class="card-count">{{ skillCategories.length }}</span>
+            </div>
+            <div class="card-content">
+              <div class="skills-grid">
+                <div class="skill-tag" *ngFor="let skill of skillCategories">
+                  {{ skill }}
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <a routerLink="/experience" class="view-all-link">View Experience →</a>
+            </div>
           </div>
         </div>
       </div>
@@ -71,6 +132,17 @@ export class HomeComponent implements OnInit {
   currentDateTime = new Date();
   greetingText = '';
   greetingSubtitle = '';
+  
+  latestIdeas = [
+    { title: 'WorkSpan', status: 'Concept' },
+    { title: 'PeekOn', status: 'Prototype' },
+    { title: 'HealthCheck', status: 'Concept' }
+  ];
+  
+  skillCategories = [
+    'Test Automation', 'API Testing', 'Performance Testing', 
+    'Quality Assurance', 'CI/CD', 'Agile', 'ISTQB', 'SAFe'
+  ];
 
   constructor(private dataService: PortfolioDataService) {
     this.personalInfo$ = this.dataService.personalInfo$;
