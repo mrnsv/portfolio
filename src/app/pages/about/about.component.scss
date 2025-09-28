@@ -342,7 +342,7 @@
   position: absolute;
   z-index: 1; // Behind text content
   object-fit: cover;
-  border-radius: 16px;
+  border-radius: 0px;
   filter: grayscale(0.2) contrast(1.1) brightness(1.1) saturate(0.8);
   opacity: 0.6; // Subtle background effect
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -352,9 +352,9 @@
   
   // Header images - positioned behind name section
   &.full_figure {
-    width: 180px;        // Reduced width for better fit
-    height: 240px;       // Reduced height for better fit
-    top: 10px;           // Position: Moved up
+    width: 160px;        // Reduced width for better fit
+    height: 220px;       // Reduced height for better fit
+    top: 5px;           // Position: Moved up
     right: 20px;         // Adjusted position
     transform: rotate(0deg); // Angle: No rotation
     object-fit: cover;   // Ensure image fits within container
@@ -362,32 +362,33 @@
   }
   
   &.profile {
-    width: 160px;        // Size: Decreased width
-    height: 140px;       // Size: Increased height
-    top: 70px;           // Position: Moved up
-    right: 30px;         // Position: Moved right
-    transform: rotate(5deg);  // Angle: Slight clockwise rotation
+    width: 220px;        // Size: Decreased width
+    height: 220px;       // Size: Increased height
+    top: 5px;           // Position: Moved up
+    right: 300px;         // Position: Moved right
+    transform: rotate(0deg);  // Angle: Slight clockwise rotation
     object-fit: cover; 
     box-shadow: 0 12px 30px rgba(251, 191, 36, 0.2);
   }
   
   // Info section images - positioned behind text
   &.campus_at_evening {
-    width: 280px;        // Size: Increased width
-    height: 200px;       // Size: Increased height
-    top: 30px;           // Position: Moved up
-    left: -100px;        // Position: Moved further left
-    transform: rotate(12deg); // Angle: More clockwise rotation
+    width: 380px;        // Size: Increased width
+    height: 300px;       // Size: Increased height
+    top: 300px;           // Position: Moved up
+    left: 800px;        // Position: Moved further left
+    transform: rotate(0deg); // Angle: More clockwise rotation
     object-fit: cover; 
     box-shadow: 0 12px 30px rgba(107, 114, 128, 0.2);
   }
   
   &.chilling_at_office {
     width: 200px;        // Size: Decreased width
-    height: 180px;       // Size: Increased height
-    bottom: 20px;        // Position: Moved up
-    left: -40px;         // Position: Moved right
-    transform: rotate(-6deg); // Angle: Counter-clockwise rotation
+    height: 200px;       // Size: Increased height
+    top: 250px;           // Position: Moved up
+    bottom: 30px;        // Position: Moved up
+    left: 500px;         // Position: Moved right
+    transform: rotate(0deg); // Angle: Counter-clockwise rotation
     object-fit: cover; 
     box-shadow: 0 12px 30px rgba(34, 197, 94, 0.2);
   }
@@ -396,29 +397,29 @@
   &.campus {
     width: 320px;        // Size: Increased width
     height: 220px;       // Size: Increased height
-    top: 0px;            // Position: Moved to top
-    right: -120px;       // Position: Moved further right
-    transform: rotate(-10deg); // Angle: Counter-clockwise rotation
+    top: 300px;            // Position: Moved to top
+    right: 250px;       // Position: Moved further right
+    transform: rotate(0deg); // Angle: Counter-clockwise rotation
     object-fit: cover; 
     box-shadow: 0 12px 30px rgba(156, 163, 175, 0.2);
   }
   
   // Interests section images
   &.hiking {
-    width: 180px;        // Size: Decreased width
+    width: 280px;        // Size: Decreased width
     height: 170px;       // Size: Increased height
     top: 10px;           // Position: Moved up
-    right: -30px;        // Position: Moved left
+    right: 300px;        // Position: Moved left
     transform: rotate(8deg);  // Angle: Clockwise rotation
     object-fit: cover; 
     box-shadow: 0 12px 30px rgba(59, 130, 246, 0.2);
   }
   
   &.gaming {
-    width: 200px;        // Size: Increased width
-    height: 100px;       // Size: Decreased height
-    bottom: 10px;        // Position: Moved up
-    right: 40px;         // Position: Moved right
+    width: 220px;        // Size: Increased width
+    height: 120px;       // Size: Decreased height
+    bottom: -50px;        // Position: Moved up
+    right: 900px;         // Position: Moved right
     transform: rotate(-4deg); // Angle: Slight counter-clockwise rotation
     object-fit: cover; 
     box-shadow: 0 12px 30px rgba(245, 158, 11, 0.2);
@@ -430,13 +431,13 @@
     filter: grayscale(0) contrast(1.2) brightness(1.2) saturate(1);
     
     // Preserve rotation while scaling
-    &.full_figure { transform: rotate(-8deg) scale(1.05); }
-    &.profile { transform: rotate(5deg) scale(1.05); }
-    &.campus_at_evening { transform: rotate(12deg) scale(1.05); }
-    &.chilling_at_office { transform: rotate(-6deg) scale(1.05); }
-    &.campus { transform: rotate(-10deg) scale(1.05); }
-    &.hiking { transform: rotate(8deg) scale(1.05); }
-    &.gaming { transform: rotate(-4deg) scale(1.05); }
+    &.full_figure { transform: rotate(0deg) scale(1.05); }
+    &.profile { transform: rotate(0deg) scale(1.05); }
+    &.campus_at_evening { transform: rotate(0deg) scale(1.05); }
+    &.chilling_at_office { transform: rotate(0deg) scale(1.05); }
+    &.campus { transform: rotate(0deg) scale(1.05); }
+    &.hiking { transform: rotate(0deg) scale(1.05); }
+    &.gaming { transform: rotate(0deg) scale(1.05); }
   }
   
   @media (max-width: 768px) {
@@ -456,32 +457,32 @@
     &.profile { 
       top: 50px; 
       right: 15px; 
-      transform: rotate(3deg); 
+      transform: rotate(0deg); 
     }
     &.campus_at_evening { 
       top: 20px; 
       left: -25px; 
-      transform: rotate(8deg); 
+      transform: rotate(0deg); 
     }
     &.chilling_at_office { 
       bottom: 15px; 
       left: -20px; 
-      transform: rotate(-4deg); 
+      transform: rotate(0deg); 
     }
     &.campus { 
       top: 5px; 
       right: -40px; 
-      transform: rotate(-6deg); 
+      transform: rotate(0deg); 
     }
     &.hiking { 
       top: 5px; 
       right: -20px; 
-      transform: rotate(5deg); 
+      transform: rotate(0deg); 
     }
     &.gaming { 
       bottom: 5px; 
       right: 15px; 
-      transform: rotate(-2deg); 
+      transform: rotate(0deg); 
     }
   }
 }
