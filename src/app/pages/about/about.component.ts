@@ -18,14 +18,14 @@ import { PersonalInfo, Experience } from '../../shared/models';
             <div class="malayalam-name">നിതിൻ ഷാജി വളവിൽ</div>
           </div>
           <div class="header-images">
-            <img src="/assets/images/architecture.jpg" alt="Architecture" class="about-image architecture" loading="lazy">
+            <img src="/assets/images/full_figure.jpg" alt="Full figure" class="about-image full_figure" loading="lazy">
             <img src="/assets/images/profile.jpg" alt="Profile" class="about-image profile" loading="lazy">
           </div>
         </div>
         <div class="content-section info-section">
           <div class="section-images">
-            <img src="/assets/images/craft.jpg" alt="My craft began here" class="about-image craft" loading="lazy">
-            <img src="/assets/images/garden.jpg" alt="Japanese garden" class="about-image garden" loading="lazy">
+            <img src="/assets/images/mbcet_at_evening.jpg" alt="Campus at evening" class="about-image campus_at_evening" loading="lazy">
+            <img src="/assets/images/chilling_at_office.jpg" alt="Chilling at office" class="about-image chilling_at_office" loading="lazy">
           </div>
           <div class="section-content">
             <div class="section-label">INFO</div>
@@ -90,7 +90,7 @@ import { PersonalInfo, Experience } from '../../shared/models';
           </div>
           <div class="section-images">
             <img src="/assets/images/marunthuvazh_malai-peak.jpg" alt="Peak of Marunthuvazh Malai, Kanniyakumari" class="about-image hiking" loading="lazy">
-            <img src="/assets/images/cafe.jpg" alt="Aesthetic cafe" class="about-image cafe" loading="lazy">
+            <img src="/assets/images/gaming_at_train.jpg" alt="Gaming at train" class="about-image gaming" loading="lazy">
           </div>
         </div>
       </div>
