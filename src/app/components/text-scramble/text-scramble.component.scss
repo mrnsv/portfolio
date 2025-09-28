@@ -1,0 +1,77 @@
+.scramble-text {
+  display: inline-block;
+  font-family: inherit;
+  transition: all 0.3s ease;
+  position: relative;
+  
+  &.animate {
+    animation: scramble-glow 0.1s ease-in-out infinite alternate;
+  }
+}
+
+@keyframes scramble-glow {
+  0% {
+    text-shadow: 0 0 2px rgba(99, 102, 241, 0.3);
+  }
+  100% {
+    text-shadow: 0 0 4px rgba(99, 102, 241, 0.6);
+  }
+}
+
+// Language-specific styling
+.scramble-text {
+  // English characters
+  &[style*="font-family: 'Courier New'"] {
+    font-family: 'Courier New', monospace;
+    letter-spacing: 0.1em;
+  }
+  
+  // Malayalam characters
+  &[style*="font-family: 'Noto Sans Malayalam'"] {
+    font-family: 'Noto Sans Malayalam', sans-serif;
+    font-weight: 400;
+  }
+  
+  // Hindi characters
+  &[style*="font-family: 'Noto Sans Devanagari'"] {
+    font-family: 'Noto Sans Devanagari', sans-serif;
+    font-weight: 400;
+  }
+  
+  // Chinese characters
+  &[style*="font-family: 'Noto Sans SC'"] {
+    font-family: 'Noto Sans SC', sans-serif;
+    font-weight: 400;
+  }
+  
+  // Japanese characters
+  &[style*="font-family: 'Noto Sans JP'"] {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  .scramble-text {
+    font-size: 0.9em;
+    
+    &.animate {
+      animation-duration: 0.15s;
+    }
+  }
+}
+
+// Dark theme adjustments
+@media (prefers-color-scheme: dark) {
+  .scramble-text.animate {
+    @keyframes scramble-glow {
+      0% {
+        text-shadow: 0 0 2px rgba(139, 92, 246, 0.4);
+      }
+      100% {
+        text-shadow: 0 0 6px rgba(139, 92, 246, 0.8);
+      }
+    }
+  }
+}

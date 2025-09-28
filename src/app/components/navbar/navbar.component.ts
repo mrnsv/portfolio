@@ -1,21 +1,23 @@
 import { Component, OnInit, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Router, NavigationEnd } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
 import { ThemeService } from '../../core/theme.service';
 import { PortfolioDataService } from '../../core/portfolio-data.service';
+import { LanguageSwitcherComponent } from '../language-switcher/language-switcher.component';
 import { Observable } from 'rxjs';
 import { PersonalInfo, Project } from '../../shared/models';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, RouterModule, TranslateModule, LanguageSwitcherComponent],
   template: `
     <nav class="navbar">
       <!-- 1. Title Section -->
       <div class="navbar-section title-section">
         <div class="logo-button" (click)="navigateToHome()" [class.active]="isHomePage">
-          <span class="logo-text">MR. NSV</span>
+          <span class="logo-text">{{ 'navbar.title' | translate }}</span>
         </div>
       </div>
 
@@ -23,13 +25,13 @@ import { PersonalInfo, Project } from '../../shared/models';
       <div class="navbar-section pages-section">
         <ul class="navbar-menu">
           <li class="navbar-item">
-            <a routerLink="/about" routerLinkActive="active" class="navbar-link">About</a>
+            <a routerLink="/about" routerLinkActive="active" class="navbar-link">{{ 'navbar.pages.about' | translate }}</a>
           </li>
           <li class="navbar-item">
-            <a routerLink="/ideas" routerLinkActive="active" class="navbar-link">Ideas</a>
+            <a routerLink="/ideas" routerLinkActive="active" class="navbar-link">{{ 'navbar.pages.ideas' | translate }}</a>
           </li>
           <li class="navbar-item">
-            <a routerLink="/experience" routerLinkActive="active" class="navbar-link">Experience</a>
+            <a routerLink="/experience" routerLinkActive="active" class="navbar-link">{{ 'navbar.pages.experience' | translate }}</a>
           </li>
         </ul>
       </div>
@@ -38,7 +40,7 @@ import { PersonalInfo, Project } from '../../shared/models';
       <div class="navbar-section projects-section">
         
         <div class="project-category">
-          <h4 class="category-title">Finance</h4>
+          <h4 class="category-title">{{ 'navbar.projects.finance' | translate }}</h4>
           <ul class="navbar-menu">
             <li class="navbar-item">
               <a routerLink="/projects" class="navbar-link">CASMEX</a>
@@ -50,7 +52,7 @@ import { PersonalInfo, Project } from '../../shared/models';
         </div>
 
         <div class="project-category">
-          <h4 class="category-title">Real Estate</h4>
+          <h4 class="category-title">{{ 'navbar.projects.realEstate' | translate }}</h4>
           <ul class="navbar-menu">
             <li class="navbar-item">
               <a routerLink="/projects" class="navbar-link">Hummingbird</a>
@@ -65,7 +67,7 @@ import { PersonalInfo, Project } from '../../shared/models';
         </div>
 
         <div class="project-category">
-          <h4 class="category-title">E-Commerce</h4>
+          <h4 class="category-title">{{ 'navbar.projects.ecommerce' | translate }}</h4>
           <ul class="navbar-menu">
             <li class="navbar-item">
               <a routerLink="/projects" class="navbar-link">OneG8</a>
@@ -74,7 +76,7 @@ import { PersonalInfo, Project } from '../../shared/models';
         </div>
 
         <div class="project-category">
-          <h4 class="category-title">Photography</h4>
+          <h4 class="category-title">{{ 'navbar.projects.photography' | translate }}</h4>
           <ul class="navbar-menu">
             <li class="navbar-item">
               <a routerLink="/projects" class="navbar-link">Pixely</a>
@@ -85,7 +87,7 @@ import { PersonalInfo, Project } from '../../shared/models';
 
       <!-- 4. Contact Section -->
       <div class="navbar-section contact-section">
-        <h3 class="section-title">CONTACT</h3>
+        <h3 class="section-title">{{ 'navbar.contact' | translate }}</h3>
         <ul class="navbar-menu">
           <li class="navbar-item">
             <a [href]="'mailto:' + ((personalInfo$ | async)?.email || '')" class="navbar-link">Mail</a>
@@ -104,6 +106,7 @@ import { PersonalInfo, Project } from '../../shared/models';
 
       <!-- 5. Buttons Section -->
       <div class="navbar-section buttons-section">
+        <app-language-switcher></app-language-switcher>
         <button
           class="theme-toggle"
           (click)="toggleTheme()"

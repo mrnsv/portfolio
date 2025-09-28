@@ -1,0 +1,126 @@
+{
+  "common": {
+    "loading": "加载中...",
+    "error": "错误",
+    "success": "成功",
+    "cancel": "取消",
+    "save": "保存",
+    "edit": "编辑",
+    "delete": "删除",
+    "view": "查看",
+    "close": "关闭"
+  },
+  "navbar": {
+    "title": "先生. NSV",
+    "pages": {
+      "about": "关于",
+      "ideas": "想法",
+      "experience": "经验"
+    },
+    "projects": {
+      "finance": "金融",
+      "realEstate": "房地产",
+      "ecommerce": "电子商务",
+      "photography": "摄影"
+    },
+    "contact": "联系",
+    "theme": "主题"
+  },
+  "home": {
+    "greeting": {
+      "morning": "你好，早上好！",
+      "afternoon": "你好，下午好！",
+      "evening": "你好，晚上好！",
+      "night": "你好，晚安！"
+    },
+    "greetingSubtitle": {
+      "morning": "/早上/",
+      "afternoon": "/下午/",
+      "evening": "/晚上/",
+      "night": "/夜晚/"
+    },
+    "intro": "一名质量保证工程师，通过细致的测试和自动化创造无缝的数字体验。我在人类期望和技术卓越之间架起桥梁，确保技术为真实的人们完美工作。",
+    "stats": {
+      "projects": "项目",
+      "ideas": "想法",
+      "certifications": "认证",
+      "yearsExperience": "年经验"
+    },
+    "overview": {
+      "title": "概览",
+      "recentProjects": "最近项目",
+      "latestIdeas": "最新想法",
+      "skillsExpertise": "技能与专长",
+      "viewAllProjects": "查看所有项目 →",
+      "viewAllIdeas": "查看所有想法 →",
+      "viewExperience": "查看经验 →"
+    }
+  },
+  "about": {
+    "headerQuote": "通过细节的旅程...",
+    "sections": {
+      "info": "信息",
+      "education": "教育",
+      "certifications": "认证",
+      "philosophy": "质量保证理念",
+      "interests": "我喜欢做的事情"
+    },
+    "info": {
+      "text": "我是一名来自印度特里凡得琅的质量保证工程师，拥有超过7年的经验，确保技术不仅工作，而且工作良好。我的旅程始于客户支持，在那里我学会了同理心、问题解决和理解真实人们如何与产品互动的价值。随着时间的推移，这种好奇心演变成了软件测试的职业 - 从手动检查到自动化框架，从功能验证到性能和可扩展性。\n\n我一直对人类体验和技术的交叉点着迷。对我来说，测试不仅仅是发现错误 - 它是在人们每天依赖的系统中建立信任。无论是金融合规软件、物业管理系统，还是全球分销平台，我的目标是确保技术感觉无缝、可靠和人性化。\n\n今天，我专注于测试自动化、API验证和性能测试，帮助团队在不妥协质量的情况下更快地发布。在此过程中，我领导了质量保证倡议，指导了初级工程师，并跨职能合作改进了工作流程和CI/CD管道。"
+    },
+    "education": {
+      "stc": "STC技术，特里凡得琅",
+      "stcSubtitle": "认证软件测试专业人员 - 助理级别",
+      "mbcet": "MBCET (2012 – 2016)",
+      "mbcetSubtitle": "电气与电子工程学士"
+    },
+    "certifications": {
+      "istqb": "ISTQB®认证测试员基础级别",
+      "safe": "认证SAFe®实践者 (v5 & v6)"
+    },
+    "philosophy": {
+      "greatTesting": {
+        "title": "伟大的测试 = 伟大的体验",
+        "text": "就像伟大的设计一样，伟大的测试是关于直觉、结构和同理心。它是关于预测事物可能如何破裂 - 并确保它们不会对最终用户造成影响。"
+      },
+      "technologyTrust": {
+        "title": "技术即信任",
+        "text": "我将质量保证视为人类期望和技术执行之间的桥梁。我的角色是确保这种信任永远不会被打破，无论是通过自动化、严格的回归，还是性能验证。"
+      }
+    },
+    "interests": {
+      "gaming": "游戏 - 因为测试策略和游戏策略比人们想象的更相似。",
+      "hiking": "徒步旅行和旅行 - 探索新的风景和观点。"
+    }
+  },
+  "ideas": {
+    "title": "想法",
+    "subtitle": "探索创新概念和创意解决方案",
+    "items": {
+      "workSpan": "工作跨度",
+      "peekOn": "窥视",
+      "healthCheck": "健康检查",
+      "dataNexus": "数据连接",
+      "schemaCraft": "模式工艺",
+      "chronoChime": "时间钟声",
+      "pingPals": "Ping伙伴"
+    }
+  },
+  "experience": {
+    "title": "经验",
+    "subtitle": "专业旅程和专长",
+    "sections": {
+      "workExperience": "工作经验",
+      "educationCertifications": "教育与认证",
+      "coreCompetencies": "核心能力"
+    }
+  },
+  "projects": {
+    "title": "项目",
+    "subtitle": "已完成工作的作品集"
+  },
+  "contact": {
+    "title": "联系",
+    "subtitle": "保持联系"
+  }
+}

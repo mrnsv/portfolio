@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { SectionHeaderComponent } from '../../components/section-header/section-header.component';
+import { TextScrambleComponent } from '../../components/text-scramble/text-scramble.component';
 import { PortfolioDataService } from '../../core/portfolio-data.service';
 import { PersonalInfo, Project } from '../../shared/models';
 import { Observable } from 'rxjs';
@@ -9,17 +10,41 @@ import { Observable } from 'rxjs';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, RouterModule, SectionHeaderComponent],
+  imports: [CommonModule, RouterModule, SectionHeaderComponent, TextScrambleComponent],
   template: `
     <div class="home-container">
       <!-- Dashboard Header -->
       <div class="dashboard-header">
         <div class="welcome-section">
-          <h1 class="welcome-title">{{ greetingText }}</h1>
-          <p class="welcome-subtitle">{{ greetingSubtitle }}</p>
+          <h1 class="welcome-title">
+            <app-text-scramble 
+              [text]="greetingText" 
+              [languages]="['en', 'ml', 'hi', 'zh', 'ja']"
+              [speed]="30"
+              [delay]="1000"
+              [repeat]="true"
+              [repeatDelay]="8000"
+            ></app-text-scramble>
+          </h1>
+          <p class="welcome-subtitle">
+            <app-text-scramble 
+              [text]="greetingSubtitle" 
+              [languages]="['en', 'ml', 'hi', 'zh', 'ja']"
+              [speed]="40"
+              [delay]="1500"
+              [repeat]="true"
+              [repeatDelay]="10000"
+            ></app-text-scramble>
+          </p>
           <p class="intro-text">
-            A Quality Assurance Engineer crafting seamless digital experiences through meticulous testing and automation. 
-            I bridge human expectations with technical excellence, ensuring technology works beautifully for real people.
+            <app-text-scramble 
+              [text]="introText" 
+              [languages]="['en', 'ml', 'hi', 'zh', 'ja']"
+              [speed]="25"
+              [delay]="2000"
+              [repeat]="true"
+              [repeatDelay]="15000"
+            ></app-text-scramble>
           </p>
         </div>
         <div class="profile-summary" *ngIf="personalInfo$ | async as personalInfo">
@@ -140,6 +165,7 @@ export class HomeComponent implements OnInit {
   currentDateTime = new Date();
   greetingText = '';
   greetingSubtitle = '';
+  introText = 'A Quality Assurance Engineer crafting seamless digital experiences through meticulous testing and automation. I bridge human expectations with technical excellence, ensuring technology works beautifully for real people.';
   
   latestIdeas = [
     { title: 'WorkSpan', status: 'Concept' },

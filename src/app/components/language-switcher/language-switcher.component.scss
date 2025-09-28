@@ -1,0 +1,132 @@
+.language-switcher {
+  position: relative;
+  display: inline-block;
+  z-index: 1000;
+}
+
+.current-language {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-width: 120px;
+  
+  &:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: var(--accent);
+  }
+  
+  .flag {
+    font-size: 1rem;
+    line-height: 1;
+  }
+  
+  .language-name {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--primary-text);
+    flex: 1;
+  }
+  
+  .dropdown-arrow {
+    font-size: 0.7rem;
+    color: var(--secondary-text);
+    transition: transform 0.2s ease;
+    
+    &.open {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.language-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: var(--background);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.2s ease;
+  margin-top: 0.25rem;
+  overflow: hidden;
+  
+  &.open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+
+.language-option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  
+  &:last-child {
+    border-bottom: none;
+  }
+  
+  &:hover {
+    background: rgba(255, 255, 255, 0.05);
+  }
+  
+  &.selected {
+    background: rgba(99, 102, 241, 0.1);
+    color: var(--accent);
+  }
+  
+  .flag {
+    font-size: 1rem;
+    line-height: 1;
+  }
+  
+  .language-name {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--primary-text);
+    flex: 1;
+  }
+  
+  .language-name-en {
+    font-size: 0.75rem;
+    color: var(--secondary-text);
+    opacity: 0.7;
+  }
+}
+
+@media (max-width: 768px) {
+  .current-language {
+    min-width: 100px;
+    padding: 0.4rem 0.6rem;
+    
+    .language-name {
+      font-size: 0.8rem;
+    }
+  }
+  
+  .language-option {
+    padding: 0.6rem;
+    
+    .language-name {
+      font-size: 0.85rem;
+    }
+    
+    .language-name-en {
+      font-size: 0.7rem;
+    }
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "cancel": "Cancel",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "view": "View",
+    "close": "Close"
+  },
+  "navbar": {
+    "title": "MR. NSV",
+    "pages": {
+      "about": "About",
+      "ideas": "Ideas",
+      "experience": "Experience"
+    },
+    "projects": {
+      "finance": "Finance",
+      "realEstate": "Real Estate",
+      "ecommerce": "E-Commerce",
+      "photography": "Photography"
+    },
+    "contact": "CONTACT",
+    "theme": "Theme"
+  },
+  "home": {
+    "greeting": {
+      "morning": "Hello there, Good Morning!",
+      "afternoon": "Hello there, Good Afternoon!",
+      "evening": "Hello there, Good Evening!",
+      "night": "Hello there, Good Night!"
+    },
+    "greetingSubtitle": {
+      "morning": "/morning/",
+      "afternoon": "/afternoon/",
+      "evening": "/evening/",
+      "night": "/night/"
+    },
+    "intro": "A Quality Assurance Engineer crafting seamless digital experiences through meticulous testing and automation. I bridge human expectations with technical excellence, ensuring technology works beautifully for real people.",
+    "stats": {
+      "projects": "Projects",
+      "ideas": "Ideas",
+      "certifications": "Certifications",
+      "yearsExperience": "Years Experience"
+    },
+    "overview": {
+      "title": "OVERVIEW",
+      "recentProjects": "Recent Projects",
+      "latestIdeas": "Latest Ideas",
+      "skillsExpertise": "Skills & Expertise",
+      "viewAllProjects": "View All Projects →",
+      "viewAllIdeas": "View All Ideas →",
+      "viewExperience": "View Experience →"
+    }
+  },
+  "about": {
+    "headerQuote": "A JOURNEY THROUGH DETAILS...",
+    "sections": {
+      "info": "INFO",
+      "education": "EDUCATION",
+      "certifications": "CERTIFICATIONS",
+      "philosophy": "QA PHILOSOPHY",
+      "interests": "THINGS I LOVE TO DO"
+    },
+    "info": {
+      "text": "I'm a Quality Assurance Engineer from Trivandrum, India, with over 7 years of experience ensuring that technology not only works but works well. My journey began in customer support, where I learned the value of empathy, problem-solving, and understanding how real people interact with products. Over time, that curiosity evolved into a career in software testing - from manual checks to automation frameworks, from functional validation to performance and scalability.\n\nI've always been fascinated by the intersection of human experience and technology. Testing, for me, isn't just about finding bugs - it's about creating trust in the systems people rely on every day. Whether it's financial compliance software, property management systems, or global distribution platforms, my goal is to make sure technology feels seamless, reliable, and humane.\n\nToday, I focus on test automation, API validation, and performance testing, helping teams release faster without compromising quality. Along the way, I've led QA initiatives, mentored junior engineers, and collaborated across functions to improve workflows and CI/CD pipelines."
+    },
+    "education": {
+      "stc": "STC Technologies, Trivandrum",
+      "stcSubtitle": "Certified Software Test Professional – Associate Level",
+      "mbcet": "MBCET (2012 – 2016)",
+      "mbcetSubtitle": "Bachelor of Technology in Electrical and Electronics Engineering"
+    },
+    "certifications": {
+      "istqb": "ISTQB® Certified Tester Foundation Level",
+      "safe": "Certified SAFe® Practitioner (v5 & v6)"
+    },
+    "philosophy": {
+      "greatTesting": {
+        "title": "Great Testing = Great Experience",
+        "text": "Like great design, great testing is about intuition, structure, and empathy. It's about anticipating how things might break - and ensuring they don't for the end user."
+      },
+      "technologyTrust": {
+        "title": "Technology as Trust",
+        "text": "I see QA as the bridge between human expectation and technical execution. My role is to make sure that trust is never broken, whether through automation, rigorous regression, or performance validation."
+      }
+    },
+    "interests": {
+      "gaming": "Gaming - because testing strategies and gaming strategies have more in common than people think.",
+      "hiking": "Hiking and traveling - exploring new landscapes and perspectives."
+    }
+  },
+  "ideas": {
+    "title": "IDEAS",
+    "subtitle": "Exploring innovative concepts and creative solutions",
+    "items": {
+      "workSpan": "WorkSpan",
+      "peekOn": "PeekOn",
+      "healthCheck": "HealthCheck",
+      "dataNexus": "Data-Nexus",
+      "schemaCraft": "SchemaCraft",
+      "chronoChime": "ChronoChime",
+      "pingPals": "PingPals"
+    }
+  },
+  "experience": {
+    "title": "EXPERIENCE",
+    "subtitle": "Professional journey and expertise",
+    "sections": {
+      "workExperience": "Work Experience",
+      "educationCertifications": "Education & Certifications",
+      "coreCompetencies": "Core Competencies"
+    }
+  },
+  "projects": {
+    "title": "PROJECTS",
+    "subtitle": "Portfolio of completed work"
+  },
+  "contact": {
+    "title": "CONTACT",
+    "subtitle": "Get in touch"
+  }
+}

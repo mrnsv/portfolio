@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TextScrambleComponent } from '../../components/text-scramble/text-scramble.component';
 import { PortfolioDataService } from '../../core/portfolio-data.service';
 import { Observable } from 'rxjs';
 import { PersonalInfo, Experience } from '../../shared/models';
@@ -7,12 +8,21 @@ import { PersonalInfo, Experience } from '../../shared/models';
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TextScrambleComponent],
   template: `
     <div class="about-container">
       <div class="about-content">
         <div class="about-header">
-          <div class="header-quote">A JOURNEY THROUGH DETAILS...</div>
+          <div class="header-quote">
+            <app-text-scramble 
+              text="A JOURNEY THROUGH DETAILS..." 
+              [languages]="['en', 'ml', 'hi', 'zh', 'ja']"
+              [speed]="35"
+              [delay]="1500"
+              [repeat]="true"
+              [repeatDelay]="12000"
+            ></app-text-scramble>
+          </div>
           <div class="name-section">
             <h1 class="main-name">Nithin Shaji Valavil</h1>
             <div class="malayalam-name">നിതിൻ ഷാജി വളവിൽ</div>
