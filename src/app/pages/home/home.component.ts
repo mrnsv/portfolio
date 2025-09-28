@@ -26,9 +26,12 @@ import { Observable } from 'rxjs';
           <div class="time-section">
             <p class="current-time">{{ currentDateTime | date:'EEEE, d MMM h:mm a' }}</p>
           </div>
-          <div class="profile-info">
-            <h2 class="profile-name">{{ personalInfo.name }}</h2>
-            <p class="profile-title">{{ personalInfo.title }}</p>
+          <div class="profile-content">
+            <img src="/assets/images/casual_photo.jpg" alt="Nithin Shaji Valavil" class="casual-photo" loading="lazy">
+            <div class="profile-info">
+              <h2 class="profile-name">{{ personalInfo.name }}</h2>
+              <p class="profile-title">{{ personalInfo.title }}</p>
+            </div>
           </div>
         </div>
       </div>
