@@ -1,7 +1,7 @@
 .about-container {
   max-width: none; // Use full available width
   margin: 0;
-  padding: 1rem 0.5rem 4rem 0.5rem; // Add bottom padding to prevent footer cutoff
+  padding: 0.25rem 0.1rem 1rem 0.1rem; // Further reduced padding
   background: linear-gradient(135deg, var(--background) 0%, rgba(99, 102, 241, 0.02) 50%, var(--background) 100%);
   height: 100vh;
   overflow: hidden;
@@ -19,24 +19,26 @@
   }
   
   @media (max-width: 768px) {
-    padding: 0.5rem;
+    padding: 0.1rem;
     height: 100vh;
   }
 }
 
 .about-header {
-  margin-bottom: 3rem; // Increased for more impact
-  padding: 0 0.5rem;
+  margin-bottom: 1rem; // Further reduced for better space usage
+  padding: 0 0.1rem;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 2rem;
+  gap: 1rem;
   position: relative;
+  min-height: 120px; // Further reduced height
   
   @media (max-width: 768px) {
     flex-direction: column;
-    gap: 1rem;
-    padding: 0 0.5rem;
+    gap: 0.5rem;
+    padding: 0 0.1rem;
+    min-height: 100px;
   }
   
   .header-quote {
@@ -52,6 +54,7 @@
   .name-section {
     flex: 1;
     position: relative;
+    z-index: 2; // Above background images
     
     .main-name {
       font-size: 4rem; // Increased for more impact
@@ -64,6 +67,7 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); // Subtle shadow for readability
       
       @media (max-width: 768px) {
         font-size: 3rem;
@@ -77,6 +81,7 @@
       margin: 0;
       line-height: 1.2;
       opacity: 0.8;
+      text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3); // Subtle shadow for readability
       
       @media (max-width: 768px) {
         font-size: 1.25rem;
@@ -89,6 +94,7 @@
     gap: 1rem;
     flex-shrink: 0;
     position: relative;
+    z-index: 1; // Behind text content
     
     @media (max-width: 768px) {
       width: 100%;
@@ -100,7 +106,7 @@
 .about-content {
   overflow-y: auto;
   overflow-x: hidden;
-  padding: 0.5rem 0.5rem 2rem 0.5rem; // Add bottom padding for scroll space
+  padding: 0.1rem 0.1rem 0.5rem 0.1rem; // Further reduced padding
   height: 100%;
   scrollbar-width: none;
   scrollbar-color: var(--accent) transparent;
@@ -123,22 +129,24 @@
   }
   
   @media (max-width: 768px) {
-    padding: 0 0.5rem 2rem 0.5rem;
+    padding: 0 0.1rem 0.5rem 0.1rem;
   }
 }
 
 .content-section {
-  margin-bottom: 4rem; // Increased for more breathing room
+  margin-bottom: 1.5rem; // Further reduced for better space usage
   display: flex;
-  gap: 3rem;
+  gap: 1.5rem;
   align-items: flex-start;
   position: relative;
-  padding: 2rem 0;
+  padding: 0.5rem 0;
+  min-height: 140px; // Further reduced height
   
   @media (max-width: 768px) {
     flex-direction: column;
-    gap: 2rem;
-    padding: 1.5rem 0;
+    gap: 0.75rem;
+    padding: 0.5rem 0;
+    min-height: 120px;
   }
   
   &::before {
@@ -162,8 +170,9 @@
       color: var(--accent);
       letter-spacing: 0.1em;
       text-transform: uppercase;
-      margin-bottom: 1.5rem;
+      margin-bottom: 0.75rem; // Further reduced margin
       position: relative;
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); // Subtle shadow
       
       &::after {
         content: '';
@@ -177,12 +186,13 @@
     }
     
     .section-text {
-      font-size: 1.1rem; // Slightly larger for better readability
+      font-size: 0.95rem; // Further reduced for better space usage
       font-weight: 300;
       color: var(--primary-text);
-      line-height: 1.7; // Increased line height
+      line-height: 1.5; // Further reduced line height
       max-width: none;
       text-align: justify;
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); // Subtle shadow for readability
     }
   }
   
@@ -192,6 +202,7 @@
     gap: 1rem;
     flex-shrink: 0;
     position: relative;
+    z-index: 1; // Behind text content
     
     @media (max-width: 768px) {
       width: 100%;
@@ -221,8 +232,8 @@
   }
   
   .education-item {
-    margin-bottom: 1.5rem; // Increased spacing
-    padding: 1rem;
+    margin-bottom: 0.75rem; // Further reduced spacing
+    padding: 0.5rem;
     background: rgba(255, 255, 255, 0.02);
     border-radius: 8px;
     border-left: 3px solid var(--accent);
@@ -232,31 +243,34 @@
     }
     
     .education-title {
-      font-size: 1.25rem;
-      font-weight: 500; // Increased weight
+      font-size: 1rem;
+      font-weight: 500;
       color: var(--primary-text);
-      margin-bottom: 0.25rem;
+      margin-bottom: 0.15rem;
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); // Subtle shadow
     }
     
     .education-subtitle {
-      font-size: 0.9rem;
+      font-size: 0.8rem;
       font-weight: 300;
       color: var(--secondary-text);
       opacity: 0.9;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); // Subtle shadow
     }
   }
 }
 
 .certifications-section {
   .certification-item {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 300;
     color: var(--primary-text);
-    margin-bottom: 1rem; // Increased spacing
-    padding: 0.75rem 1rem;
+    margin-bottom: 0.5rem; // Further reduced spacing
+    padding: 0.4rem 0.6rem;
     background: rgba(255, 255, 255, 0.02);
     border-radius: 8px;
     border-left: 3px solid var(--accent);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); // Subtle shadow
     
     &:last-child {
       margin-bottom: 0;
@@ -268,32 +282,34 @@
   .philosophy-columns {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem; // Increased gap
+    gap: 1rem; // Further reduced gap
     
     @media (max-width: 768px) {
       grid-template-columns: 1fr;
-      gap: 1.5rem;
+      gap: 0.75rem;
     }
   }
   
   .philosophy-column {
-    padding: 1.5rem;
+    padding: 0.75rem;
     background: rgba(255, 255, 255, 0.02);
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     
     .philosophy-title {
-      font-size: 1.125rem;
-      font-weight: 500; // Increased weight
+      font-size: 0.95rem;
+      font-weight: 500;
       color: var(--primary-text);
-      margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); // Subtle shadow
     }
     
     .philosophy-text {
-      font-size: 0.95rem;
+      font-size: 0.85rem;
       font-weight: 300;
       color: var(--secondary-text);
-      line-height: 1.6;
+      line-height: 1.4;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); // Subtle shadow
     }
   }
 }
@@ -315,14 +331,15 @@
   
   .interests-list {
     .interest-item {
-      font-size: 1rem;
+      font-size: 0.9rem;
       font-weight: 300;
       color: var(--primary-text);
-      margin-bottom: 1rem; // Increased spacing
-      padding: 0.75rem 1rem;
+      margin-bottom: 0.5rem; // Further reduced spacing
+      padding: 0.4rem 0.6rem;
       background: rgba(255, 255, 255, 0.02);
       border-radius: 8px;
       border-left: 3px solid var(--accent);
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); // Subtle shadow
       
       &:last-child {
         margin-bottom: 0;
@@ -332,75 +349,150 @@
 }
 
 .about-image {
-  width: 140px; // Increased size
-  height: 100px; // Increased size
+  position: absolute;
+  z-index: 1; // Behind text content
   object-fit: cover;
-  border-radius: 12px; // More rounded corners
+  border-radius: 20px;
+  filter: grayscale(0.2) contrast(1.1) brightness(1.1) saturate(0.8);
+  opacity: 0.4; // Reduced opacity for better text readability
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  position: relative;
-  overflow: hidden;
-  filter: grayscale(0.3) contrast(1.1) brightness(1.05);
-  
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(139, 92, 246, 0.05) 100%);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    z-index: 1;
-  }
-  
-  &:hover {
-    transform: scale(1.08) rotate(1deg);
-    box-shadow: 0 20px 40px rgba(99, 102, 241, 0.2);
-    filter: grayscale(0) contrast(1.2) brightness(1.1);
-    
-    &::before {
-      opacity: 1;
-    }
-  }
   
   // Remove all borders for seamless blending
-  &.architecture,
-  &.profile,
-  &.craft,
-  &.garden,
-  &.campus,
-  &.snowboarding,
-  &.cafe {
-    border: none;
-  }
+  border: none;
   
-  // Add subtle shadow for depth
-  &.architecture {
-    box-shadow: 0 8px 25px rgba(56, 189, 248, 0.15);
+  // Header images - positioned behind name section
+  &.full_figure {
+    width: 160px;        // Reduced width for better fit
+    height: 220px;       // Reduced height for better fit
+    top: 5px;           // Position: Moved up
+    right: 20px;         // Adjusted position
+    transform: rotate(0deg); // Angle: No rotation
+    object-fit: cover;   // Ensure image fits within container
+    box-shadow: 0 12px 30px rgba(56, 189, 248, 0.2);
   }
   
   &.profile {
-    box-shadow: 0 8px 25px rgba(251, 191, 36, 0.15);
+    width: 220px;        // Size: Decreased width
+    height: 220px;       // Size: Increased height
+    top: 5px;           // Position: Moved up
+    right: 300px;         // Position: Moved right
+    transform: rotate(0deg);  // Angle: Slight clockwise rotation
+    object-fit: cover; 
+    box-shadow: 0 12px 30px rgba(251, 191, 36, 0.2);
   }
   
-  &.craft {
-    box-shadow: 0 8px 25px rgba(107, 114, 128, 0.15);
+  // Info section images - positioned behind text
+  &.campus_at_evening {
+    width: 380px;        // Size: Increased width
+    height: 300px;       // Size: Increased height
+    top: 300px;           // Position: Moved up
+    left: 800px;        // Position: Moved further left
+    transform: rotate(0deg); // Angle: More clockwise rotation
+    object-fit: cover; 
+    box-shadow: 0 12px 30px rgba(107, 114, 128, 0.2);
   }
   
-  &.garden {
-    box-shadow: 0 8px 25px rgba(34, 197, 94, 0.15);
+  &.chilling_at_office {
+    width: 200px;        // Size: Decreased width
+    height: 200px;       // Size: Increased height
+    top: 250px;           // Position: Moved up
+    bottom: 30px;        // Position: Moved up
+    left: 500px;         // Position: Moved right
+    transform: rotate(0deg); // Angle: Counter-clockwise rotation
+    object-fit: cover; 
+    box-shadow: 0 12px 30px rgba(34, 197, 94, 0.2);
   }
   
+  // Education section image
   &.campus {
-    box-shadow: 0 8px 25px rgba(156, 163, 175, 0.15);
+    width: 320px;        // Size: Increased width
+    height: 220px;       // Size: Increased height
+    top: 300px;            // Position: Moved to top
+    right: 250px;       // Position: Moved further right
+    transform: rotate(0deg); // Angle: Counter-clockwise rotation
+    object-fit: cover; 
+    box-shadow: 0 12px 30px rgba(156, 163, 175, 0.2);
   }
   
-  &.snowboarding {
-    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.15);
+  // Interests section images
+  &.hiking {
+    width: 280px;        // Size: Decreased width
+    height: 170px;       // Size: Increased height
+    top: 10px;           // Position: Moved up
+    right: 300px;        // Position: Moved left
+    transform: rotate(8deg);  // Angle: Clockwise rotation
+    object-fit: cover; 
+    box-shadow: 0 12px 30px rgba(59, 130, 246, 0.2);
   }
   
-  &.cafe {
-    box-shadow: 0 8px 25px rgba(245, 158, 11, 0.15);
+  &.gaming {
+    width: 220px;        // Size: Increased width
+    height: 120px;       // Size: Decreased height
+    bottom: -50px;        // Position: Moved up
+    right: 900px;         // Position: Moved right
+    transform: rotate(-4deg); // Angle: Slight counter-clockwise rotation
+    object-fit: cover; 
+    box-shadow: 0 12px 30px rgba(245, 158, 11, 0.2);
+  }
+  
+  // Hover effects for better interactivity
+  &:hover {
+    opacity: 0.8;
+    filter: grayscale(0) contrast(1.2) brightness(1.2) saturate(1);
+    
+    // Preserve rotation while scaling
+    &.full_figure { transform: rotate(0deg) scale(1.05); }
+    &.profile { transform: rotate(0deg) scale(1.05); }
+    &.campus_at_evening { transform: rotate(0deg) scale(1.05); }
+    &.chilling_at_office { transform: rotate(0deg) scale(1.05); }
+    &.campus { transform: rotate(0deg) scale(1.05); }
+    &.hiking { transform: rotate(0deg) scale(1.05); }
+    &.gaming { transform: rotate(0deg) scale(1.05); }
+  }
+  
+  @media (max-width: 768px) {
+    // Reduce sizes on mobile
+    &.full_figure, &.profile, &.campus_at_evening, &.chilling_at_office, &.campus, &.hiking, &.gaming {
+      width: 80px;
+      height: 100px;
+      opacity: 0.4;
+    }
+    
+    // Adjust positions and angles for mobile
+    &.full_figure { 
+      top: 5px; 
+      right: 10px; 
+      transform: rotate(0deg); 
+    }
+    &.profile { 
+      top: 50px; 
+      right: 15px; 
+      transform: rotate(0deg); 
+    }
+    &.campus_at_evening { 
+      top: 20px; 
+      left: -25px; 
+      transform: rotate(0deg); 
+    }
+    &.chilling_at_office { 
+      bottom: 15px; 
+      left: -20px; 
+      transform: rotate(0deg); 
+    }
+    &.campus { 
+      top: 5px; 
+      right: -40px; 
+      transform: rotate(0deg); 
+    }
+    &.hiking { 
+      top: 5px; 
+      right: -20px; 
+      transform: rotate(0deg); 
+    }
+    &.gaming { 
+      bottom: 5px; 
+      right: 15px; 
+      transform: rotate(0deg); 
+    }
   }
 }

@@ -104,6 +104,32 @@
     }
   }
   
+  .profile-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.75rem;
+    }
+  }
+  
+  .casual-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 0px solid var(--accent);
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
+    
+    @media (max-width: 768px) {
+      width: 60px;
+      height: 60px;
+    }
+  }
+  
   .profile-info {
     text-align: right;
     
