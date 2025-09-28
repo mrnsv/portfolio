@@ -1,7 +1,7 @@
 .about-container {
   max-width: none; // Use full available width
   margin: 0;
-  padding: 1rem 0.5rem 4rem 0.5rem; // Add bottom padding to prevent footer cutoff
+  padding: 0.5rem 0.25rem 2rem 0.25rem; // Reduced padding for better space usage
   background: linear-gradient(135deg, var(--background) 0%, rgba(99, 102, 241, 0.02) 50%, var(--background) 100%);
   height: 100vh;
   overflow: hidden;
@@ -19,26 +19,26 @@
   }
   
   @media (max-width: 768px) {
-    padding: 0.5rem;
+    padding: 0.25rem;
     height: 100vh;
   }
 }
 
 .about-header {
-  margin-bottom: 3rem; // Increased for more impact
-  padding: 0 0.5rem;
+  margin-bottom: 1.5rem; // Reduced for better space usage
+  padding: 0 0.25rem;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 2rem;
+  gap: 1.5rem;
   position: relative;
-  min-height: 200px; // Ensure space for background images
+  min-height: 150px; // Reduced height
   
   @media (max-width: 768px) {
     flex-direction: column;
-    gap: 1rem;
-    padding: 0 0.5rem;
-    min-height: 150px;
+    gap: 0.75rem;
+    padding: 0 0.25rem;
+    min-height: 120px;
   }
   
   .header-quote {
@@ -104,7 +104,7 @@
 .about-content {
   overflow-y: auto;
   overflow-x: hidden;
-  padding: 0.5rem 0.5rem 2rem 0.5rem; // Add bottom padding for scroll space
+  padding: 0.25rem 0.25rem 1rem 0.25rem; // Reduced padding
   height: 100%;
   scrollbar-width: none;
   scrollbar-color: var(--accent) transparent;
@@ -127,24 +127,24 @@
   }
   
   @media (max-width: 768px) {
-    padding: 0 0.5rem 2rem 0.5rem;
+    padding: 0 0.25rem 1rem 0.25rem;
   }
 }
 
 .content-section {
-  margin-bottom: 4rem; // Increased for more breathing room
+  margin-bottom: 2rem; // Reduced for better space usage
   display: flex;
-  gap: 3rem;
+  gap: 2rem;
   align-items: flex-start;
   position: relative;
-  padding: 2rem 0;
-  min-height: 250px; // Ensure space for background images
+  padding: 1rem 0;
+  min-height: 180px; // Reduced height
   
   @media (max-width: 768px) {
     flex-direction: column;
-    gap: 2rem;
-    padding: 1.5rem 0;
-    min-height: 200px;
+    gap: 1rem;
+    padding: 0.75rem 0;
+    min-height: 150px;
   }
   
   &::before {
@@ -168,7 +168,7 @@
       color: var(--accent);
       letter-spacing: 0.1em;
       text-transform: uppercase;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1rem; // Reduced margin
       position: relative;
       
       &::after {
@@ -183,10 +183,10 @@
     }
     
     .section-text {
-      font-size: 1.1rem; // Slightly larger for better readability
+      font-size: 1rem; // Slightly reduced for better space usage
       font-weight: 300;
       color: var(--primary-text);
-      line-height: 1.7; // Increased line height
+      line-height: 1.6; // Reduced line height
       max-width: none;
       text-align: justify;
     }
@@ -228,8 +228,8 @@
   }
   
   .education-item {
-    margin-bottom: 1.5rem; // Increased spacing
-    padding: 1rem;
+    margin-bottom: 1rem; // Reduced spacing
+    padding: 0.75rem;
     background: rgba(255, 255, 255, 0.02);
     border-radius: 8px;
     border-left: 3px solid var(--accent);
@@ -239,14 +239,14 @@
     }
     
     .education-title {
-      font-size: 1.25rem;
-      font-weight: 500; // Increased weight
+      font-size: 1.1rem;
+      font-weight: 500;
       color: var(--primary-text);
-      margin-bottom: 0.25rem;
+      margin-bottom: 0.2rem;
     }
     
     .education-subtitle {
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       font-weight: 300;
       color: var(--secondary-text);
       opacity: 0.9;
@@ -256,11 +256,11 @@
 
 .certifications-section {
   .certification-item {
-    font-size: 1rem;
+    font-size: 0.95rem;
     font-weight: 300;
     color: var(--primary-text);
-    margin-bottom: 1rem; // Increased spacing
-    padding: 0.75rem 1rem;
+    margin-bottom: 0.75rem; // Reduced spacing
+    padding: 0.6rem 0.8rem;
     background: rgba(255, 255, 255, 0.02);
     border-radius: 8px;
     border-left: 3px solid var(--accent);
@@ -275,32 +275,32 @@
   .philosophy-columns {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem; // Increased gap
+    gap: 1.5rem; // Reduced gap
     
     @media (max-width: 768px) {
       grid-template-columns: 1fr;
-      gap: 1.5rem;
+      gap: 1rem;
     }
   }
   
   .philosophy-column {
-    padding: 1.5rem;
+    padding: 1rem;
     background: rgba(255, 255, 255, 0.02);
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     
     .philosophy-title {
-      font-size: 1.125rem;
-      font-weight: 500; // Increased weight
+      font-size: 1rem;
+      font-weight: 500;
       color: var(--primary-text);
-      margin-bottom: 1rem;
+      margin-bottom: 0.75rem;
     }
     
     .philosophy-text {
-      font-size: 0.95rem;
+      font-size: 0.9rem;
       font-weight: 300;
       color: var(--secondary-text);
-      line-height: 1.6;
+      line-height: 1.5;
     }
   }
 }
@@ -322,11 +322,11 @@
   
   .interests-list {
     .interest-item {
-      font-size: 1rem;
+      font-size: 0.95rem;
       font-weight: 300;
       color: var(--primary-text);
-      margin-bottom: 1rem; // Increased spacing
-      padding: 0.75rem 1rem;
+      margin-bottom: 0.75rem; // Reduced spacing
+      padding: 0.6rem 0.8rem;
       background: rgba(255, 255, 255, 0.02);
       border-radius: 8px;
       border-left: 3px solid var(--accent);
@@ -352,11 +352,12 @@
   
   // Header images - positioned behind name section
   &.full_figure {
-    width: 220px;        // Size: Increased width
-    height: 160px;       // Size: Increased height
+    width: 180px;        // Reduced width for better fit
+    height: 240px;       // Reduced height for better fit
     top: 10px;           // Position: Moved up
-    right: -40px;        // Position: Moved left
-    transform: rotate(-8deg); // Angle: Slight counter-clockwise rotation
+    right: 20px;         // Adjusted position
+    transform: rotate(0deg); // Angle: No rotation
+    object-fit: cover;   // Ensure image fits within container
     box-shadow: 0 12px 30px rgba(56, 189, 248, 0.2);
   }
   
@@ -366,6 +367,7 @@
     top: 70px;           // Position: Moved up
     right: 30px;         // Position: Moved right
     transform: rotate(5deg);  // Angle: Slight clockwise rotation
+    object-fit: cover; 
     box-shadow: 0 12px 30px rgba(251, 191, 36, 0.2);
   }
   
@@ -376,6 +378,7 @@
     top: 30px;           // Position: Moved up
     left: -100px;        // Position: Moved further left
     transform: rotate(12deg); // Angle: More clockwise rotation
+    object-fit: cover; 
     box-shadow: 0 12px 30px rgba(107, 114, 128, 0.2);
   }
   
@@ -385,6 +388,7 @@
     bottom: 20px;        // Position: Moved up
     left: -40px;         // Position: Moved right
     transform: rotate(-6deg); // Angle: Counter-clockwise rotation
+    object-fit: cover; 
     box-shadow: 0 12px 30px rgba(34, 197, 94, 0.2);
   }
   
@@ -395,6 +399,7 @@
     top: 0px;            // Position: Moved to top
     right: -120px;       // Position: Moved further right
     transform: rotate(-10deg); // Angle: Counter-clockwise rotation
+    object-fit: cover; 
     box-shadow: 0 12px 30px rgba(156, 163, 175, 0.2);
   }
   
@@ -405,6 +410,7 @@
     top: 10px;           // Position: Moved up
     right: -30px;        // Position: Moved left
     transform: rotate(8deg);  // Angle: Clockwise rotation
+    object-fit: cover; 
     box-shadow: 0 12px 30px rgba(59, 130, 246, 0.2);
   }
   
@@ -414,6 +420,7 @@
     bottom: 10px;        // Position: Moved up
     right: 40px;         // Position: Moved right
     transform: rotate(-4deg); // Angle: Slight counter-clockwise rotation
+    object-fit: cover; 
     box-shadow: 0 12px 30px rgba(245, 158, 11, 0.2);
   }
   
@@ -423,40 +430,40 @@
     filter: grayscale(0) contrast(1.2) brightness(1.2) saturate(1);
     
     // Preserve rotation while scaling
-    &.architecture { transform: rotate(-8deg) scale(1.05); }
+    &.full_figure { transform: rotate(-8deg) scale(1.05); }
     &.profile { transform: rotate(5deg) scale(1.05); }
-    &.craft { transform: rotate(12deg) scale(1.05); }
-    &.garden { transform: rotate(-6deg) scale(1.05); }
+    &.campus_at_evening { transform: rotate(12deg) scale(1.05); }
+    &.chilling_at_office { transform: rotate(-6deg) scale(1.05); }
     &.campus { transform: rotate(-10deg) scale(1.05); }
     &.hiking { transform: rotate(8deg) scale(1.05); }
-    &.cafe { transform: rotate(-4deg) scale(1.05); }
+    &.gaming { transform: rotate(-4deg) scale(1.05); }
   }
   
   @media (max-width: 768px) {
     // Reduce sizes on mobile
-    &.architecture, &.profile, &.craft, &.garden, &.campus, &.hiking, &.cafe {
-      width: 100px;
-      height: 80px;
+    &.full_figure, &.profile, &.campus_at_evening, &.chilling_at_office, &.campus, &.hiking, &.gaming {
+      width: 80px;
+      height: 100px;
       opacity: 0.4;
     }
     
     // Adjust positions and angles for mobile
-    &.architecture { 
+    &.full_figure { 
       top: 5px; 
-      right: -20px; 
-      transform: rotate(-5deg); 
+      right: 10px; 
+      transform: rotate(0deg); 
     }
     &.profile { 
       top: 50px; 
       right: 15px; 
       transform: rotate(3deg); 
     }
-    &.craft { 
+    &.campus_at_evening { 
       top: 20px; 
       left: -25px; 
       transform: rotate(8deg); 
     }
-    &.garden { 
+    &.chilling_at_office { 
       bottom: 15px; 
       left: -20px; 
       transform: rotate(-4deg); 
@@ -471,7 +478,7 @@
       right: -20px; 
       transform: rotate(5deg); 
     }
-    &.cafe { 
+    &.gaming { 
       bottom: 5px; 
       right: 15px; 
       transform: rotate(-2deg); 
